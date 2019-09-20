@@ -1,0 +1,26 @@
+name: Greet Everyone
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tar:
+    name: Upload zip files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Tar zip
+        run: sh ./tar.sh
+      - name: Install Node
+        uses: actions/setup-node@v1.1.0
+        with:
+          node-version: "10.x"
+      - name: Change directory and upload files
+        run: |
+          cd .github/scripts
+          npm install
+          node index.js
+        env:
+          API_GATEWAY_SECRET_KEY: ${{ secrets.API_GATEWAY_SECRET_KEY }}
