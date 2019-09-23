@@ -28,4 +28,4 @@ jobs:
         env:
           BOT_KEY: ${{ secrets.BOT_KEY }}
           BOT_MESSAGE: "[cloudBase-example] build success. [GO](https://github.com/TencentCloudBase/cloudbase-examples)"
-        use: chhpt/wechat-work-messenger@v1.0.0
+        uses: chhpt/wechat-work-messenger@v1.0.0
