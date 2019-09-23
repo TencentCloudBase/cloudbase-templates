@@ -6,5 +6,5 @@ mkdir .zip-files
 for dir in $(find * -maxdepth 0 -type d)
 do
   name=${dir%*/}
-  tar cvzf .zip-files/$name.tar.gz $dir
+  tar -cvf .zip-files/$name.tar.gz -C $dir .
 done

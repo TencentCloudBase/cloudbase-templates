@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>SCF春节活动</title>
+    <meta name="keywords" content="SCF春节活动" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta itemprop="name" content="SCF春节活动" />
+    <meta itemprop="description" name="description" content="SCF春节活动" />
+    <meta itemprop="image" content=" 配置分享图片" />
+    <link
+        href="https://imgcache.qq.com/open_proj/proj_qcloud_v2/mc_2014/scf/css/act-scf.css"
+        rel="stylesheet" />
+</head>
+
+<body ontouchstart="">
+    <div style="display: none">
+        <img src="https://imgcache.qq.com/open_proj/proj_qcloud_v2/mc_2014/scf/css/img/act-20190114/person@2x.png"
+            alt="" width="300" height="300"
+            style="position: absolute;top: 50%;left: 50%; margin: -150px 0 0 -150px;" />
+    </div>
+    <div class="scf-act-wrap">
+        <div class="wrap-inner"></div>
+        <!--四角元宝-->
+        <div class="dot-bg dot-top-left"></div>
+        <div class="dot-bg dot-top-right"></div>
+        <div class="dot-bg dot-bottom-left"></div>
+        <div class="dot-bg dot-bottom-right"></div>
+
+        <!--对联区域-->
+        <div class="scf-bless-area">
+            <div class="name">
+                <span class="title">${master}</span> <span
+                    class="title">恭祝</span>
+            </div>
+
+            <div class="scf-wealth-god"></div>
+        </div>
+        <div class="couplet couplet-content-0 custom">
+            <div class="middle" title="${centralCouplet}">${centralCouplet}
+            </div>
+            <div class="up" title="${upCouplet}">
+                <span class="inner">${upCouplet}</span>
+            </div>
+            <div class="down" title="${downCouplet}">
+                <span class="inner">${downCouplet}</span>
+            </div>
+        </div>
+
+        <div class="scf-op-area">
+            <div class="btn-one-more"><button class="">再试一次</button></div>
+            <div class="btn-my-bless">
+                <button>
+                    <a href="https://cloud.tencent.com/act/event/scfpromotion?!preview"
+                        style="text-decoration: none;color:#fff">生成我的拜年卡</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://img.qcloud.com/qcloud/iaas_web/build/jquery.min.js"></script>
+    <script>
+        //手机访问判断
+        if (
+            /AppleWebKit.*Mobile/i.test(navigator.userAgent) ||
+            /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(
+                navigator.userAgent
+            )
+        ) {
+        } else {
+            $('.scf-act-wrap').addClass('pc-open')
+        }
+    </script>
+    <script type="text/javascript">
+        $('.btn-one-more').click(function () {
+            const coupletNode = $('.couplet')
+            const isCustom = coupletNode.is('.custom')
+            const curNum = parseInt(
+                /couplet-content-(\d)?/.exec(coupletNode.attr('class'))[1]
+            )
+            let nextNum = isCustom
+                ? Math.ceil(Math.random() * 5) - 1
+                : Math.ceil(Math.random() * 4)
+            if (+curNum === +nextNum) nextNum = curNum < 4 ? curNum + 1 : curNum - 1
+            coupletNode.attr(
+                'class',
+                `${isCustom ? 'custom' : ''} couplet couplet-content-${nextNum}`
+            )
+        })
+    </script>
+    <script>
+        var _mtac = {}
+            ; (function () {
+                var mta = document.createElement('script')
+                mta.src = '//pingjs.qq.com/h5/stats.js?v2.0.4'
+                mta.setAttribute('name', 'MTAH5')
+                mta.setAttribute('sid', '500667631')
+                var s = document.getElementsByTagName('script')[0]
+                s.parentNode.insertBefore(mta, s)
+            })()
+    </script>
+</body>
+
+</html>
