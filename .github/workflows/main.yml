@@ -24,3 +24,8 @@ jobs:
           node index.js
         env:
           API_GATEWAY_SECRET_KEY: ${{ secrets.API_GATEWAY_SECRET_KEY }}
+      - name: Notify WeChat Work
+        env:
+          BOT_KEY: ${{ secrets.BOT_KEY }}
+          BOT_MESSAGE: "[cloudBase-example] build success. [GO](https://github.com/TencentCloudBase/cloudbase-examples)"
+        use: chhpt/wechat-work-messenger@v1.0.0
