@@ -1,5 +1,5 @@
 module.exports = {
-    envId: 'base-830cab',
+    envId: '{{envId}}',
     functionRoot: './functions',
     functions: [
         {
