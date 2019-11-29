@@ -27,5 +27,5 @@ jobs:
       - name: Notify WeChat Work
         env:
           BOT_KEY: ${{ secrets.BOT_KEY }}
-          POST_MESSAGE: "[cloudBase-example] build success. [GO](https://github.com/TencentCloudBase/cloudbase-examples)"
+          POST_MESSAGE: "[cloudBase-example] build success. [GO](https://github.com/TencentCloudBase/cloudbase-templates)"
         uses: chhpt/wechat-work-messenger@v1.0.0

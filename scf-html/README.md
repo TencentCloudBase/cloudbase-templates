@@ -4,4 +4,4 @@
 
 注意：需启用 API 网关的集成响应。
 
-源码地址：[GitHub](https://github.com/TencentCloudBase/cloudbase-examples/blob/master/scf-html/README.md)
+源码地址：[GitHub](https://github.com/TencentCloudBase/cloudbase-templates/blob/master/scf-html/)

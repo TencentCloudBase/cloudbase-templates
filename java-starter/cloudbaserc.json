@@ -6,13 +6,7 @@
       "name": "app",
       "config": {
         "timeout": 5,
-        "envVariables": {
-          "key": "value"
-        },
-        "vpc": {
-          "subnetId": "subnet-xxx",
-          "vpcId": "vpc-xxx"
-        },
+        "envVariables": {},
         "runtime": "Java8"
       },
       "triggers": [

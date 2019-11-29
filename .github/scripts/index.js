@@ -46,7 +46,7 @@ async function uploadZipFiles() {
   try {
     await app.storage.uploadDirectory(
       path.resolve(__dirname, '../../.zip-files'),
-      'cloudbase-examples'
+      'cloudbase-templates'
     );
     console.log('上传文件成功！');
   } catch (error) {

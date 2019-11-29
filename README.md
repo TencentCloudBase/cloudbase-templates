@@ -8,3 +8,4 @@
 - [java-starter](./java-starter/README.md)：Java 简单示例
 - [php-starter](./php-starter/README.md)：PHP 简单示例
 - [access-token](./access-token/README.md)：云开发获取腾讯云临时密钥示例
+- [node-trigger](./node-trigger/README.md)：Node 触发器示例

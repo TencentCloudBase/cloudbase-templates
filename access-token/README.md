@@ -6,4 +6,4 @@
 
 借助云函数自动注入角色临时密钥的机制，可以快速获取角色临时访问密钥。
 
-源码地址：[GitHub](https://github.com/TencentCloudBase/cloudbase-examples/blob/master/access-token/README.md)
+源码地址：[GitHub](https://github.com/TencentCloudBase/cloudbase-templates/blob/master/access-token/)
