@@ -4,11 +4,9 @@
   "functions": [
     {
       "name": "app",
-      "config": {
-        "timeout": 5,
-        "envVariables": {},
-        "runtime": "Php7"
-      },
+      "timeout": 5,
+      "envVariables": {},
+      "runtime": "Php7",
       "params": {},
       "handler": "index.main"
     }

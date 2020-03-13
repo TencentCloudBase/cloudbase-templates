@@ -4,11 +4,9 @@
   "functions": [
     {
       "name": "app",
-      "config": {
-        "timeout": 5,
-        "envVariables": {},
-        "runtime": "Java8"
-      },
+      "timeout": 5,
+      "envVariables": {},
+      "runtime": "Java8",
       "triggers": [
         {
           "name": "myTrigger",
