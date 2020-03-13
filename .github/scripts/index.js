@@ -40,7 +40,7 @@ async function uploadZipFiles() {
 
   const app = CloudBase.init({
     ...secret,
-    envId: 'base-830cab'
+    envId: 'cli'
   });
 
   try {
