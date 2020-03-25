@@ -13,7 +13,7 @@ function App() {
   const loadScript = async () => {
     const script = document.createElement('script')
     script.type = 'text/javascript'
-    script.src = 'https://imgcache.qq.com/qcloud/tcbjs/1.3.8/tcb.js'
+    script.src = 'https://imgcache.qq.com/qcloud/tcbjs/1.5.0/tcb.js'
     document.head.appendChild(script)
 
     return new Promise((resolve) => {

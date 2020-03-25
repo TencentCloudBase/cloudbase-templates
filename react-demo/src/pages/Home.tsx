@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Row, Col, Button, Input, Alert, Spin, message } from 'antd'
+import { Row, Col, Button, Input, Alert, message } from 'antd'
 import { getApp } from '@/utils'
 import { config } from '@/config'
 
@@ -10,23 +10,10 @@ const ticketUrl = `https://${config.envId}.service.tcloudbase.com/login`
 export const Home: React.FC<{}> = () => {
   const app = getApp()
   const [loginLoading, setLoginLoading] = useState(false)
-  const [login, setLogin] = useState(false)
-  const [loading, setLoading] = useState(true)
 
   // 检测登录状态
-  app
-    .auth()
-    .getLoginState()
-    .then((loginState: any) => {
-      if (loginState) {
-        setLogin(true)
-      } else {
-        setLogin(false)
-      }
-      setTimeout(() => {
-        setLoading(false)
-      }, 500)
-    })
+  const loginState = app.auth().getLoginState()
+  const login = !!loginState
 
   const customLogin = (userId: string) => {
     if (!userId) {
@@ -85,13 +72,7 @@ export const Home: React.FC<{}> = () => {
       </div>
       <Row>
         <Col span={8} offset={8}>
-          {loading && (
-            <div className="margin-bottom text-center">
-              <Spin />
-              <p>登录状态检查中</p>
-            </div>
-          )}
-          {!login && !loading && (
+          {!login && (
             <Alert
               message="你还没有登录，使用前请先登录！"
               type="warning"
@@ -99,7 +80,7 @@ export const Home: React.FC<{}> = () => {
               className="margin-bottom"
             />
           )}
-          {login && !loading && (
+          {login && (
             <Alert
               message="你已登录，无需再次登录！"
               type="info"
@@ -113,7 +94,7 @@ export const Home: React.FC<{}> = () => {
         <Col span={12} offset={6}>
           <Search
             size="middle"
-            placeholder="输入你的用户名"
+            placeholder="输入你的用户名，用户名长度必须大于 4 位，由字母和数字组成"
             enterButton="自定义登录"
             loading={loginLoading}
             onSearch={customLogin}
