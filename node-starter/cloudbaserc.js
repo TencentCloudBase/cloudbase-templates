@@ -8,7 +8,9 @@ module.exports = {
             timeout: 5,
             // 环境变量
             envVariables: {},
-            runtime: "Nodejs8.9",
+            runtime: "Nodejs10.15",
+            // 内存 128
+            memorySize: 128,
             handler: "index.main"
         }
     ]

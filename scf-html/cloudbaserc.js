@@ -6,7 +6,9 @@ module.exports = {
             name: "scf-html",
             // 超时时间
             timeout: 5,
-            runtime: "Nodejs8.9",
+            runtime: "Nodejs10.15",
+            // 内存 128
+            memorySize: 128,
             handler: "index.main"
         }
     ]
