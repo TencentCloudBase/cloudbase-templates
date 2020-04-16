@@ -7,7 +7,9 @@ module.exports = {
       config: {
         timeout: 5,
         envVariables: {},
-        runtime: 'Nodejs8.9'
+        runtime: "Nodejs10.15",
+        // 内存 128
+        memorySize: 128,
       }
     },
     {
@@ -15,7 +17,9 @@ module.exports = {
       config: {
         timeout: 5,
         envVariables: {},
-        runtime: 'Nodejs8.9'
+        runtime: "Nodejs10.15",
+        // 内存 128
+        memorySize: 128,
       }
     }
   ]
