@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cloudbase/manager-node": "0.1.0-1",
-    "node-fetch": "^2.6.0"
+    "@cloudbase/manager-node": "^3.2.4",
+    "archiver": "^4.0.1"
   }
 }
