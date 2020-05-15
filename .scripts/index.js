@@ -52,22 +52,18 @@ async function uploadZipFiles() {
     envId: "tcli",
   });
 
-  try {
-    await app.storage.uploadDirectory({
-      localPath: path.resolve(rootPath, ".zip-files"),
-      cloudPath: "cloudbase-templates",
-      // 忽略 . 开头的文件
-      ignore: [".*"],
-    });
-    console.log("上传文件成功！");
-  } catch (error) {
-    console.log(error);
-  }
+  await app.storage.uploadDirectory({
+    localPath: path.resolve(rootPath, ".zip-files"),
+    cloudPath: "cloudbase-templates",
+    // 忽略 . 开头的文件
+    ignore: [".*"],
+  });
+  console.log("上传文件成功！");
 }
 
 packZipFiles()
   .then(() => uploadZipFiles())
   .catch((e) => {
-    console.log(e);
+    console.log("错误", e);
     process.exit(1);
   });
