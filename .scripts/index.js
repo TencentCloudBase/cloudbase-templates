@@ -65,6 +65,9 @@ async function uploadZipFiles() {
   }
 }
 
-packZipFiles().then(() => {
-  uploadZipFiles();
-});
+packZipFiles()
+  .then(() => uploadZipFiles())
+  .catch((e) => {
+    console.log(e);
+    process.exit(1);
+  });
