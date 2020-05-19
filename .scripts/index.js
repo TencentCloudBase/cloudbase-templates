@@ -35,7 +35,7 @@ async function packZipFiles() {
       });
 
       archive.pipe(output);
-      archive.directory(path.join(rootPath, item), item);
+      archive.directory(path.join(rootPath, item), false);
       archive.finalize();
     });
   });
