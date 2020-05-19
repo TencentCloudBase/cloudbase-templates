@@ -9,7 +9,7 @@ module.exports = {
             runtime: "Nodejs10.15",
             // 内存 128
             memorySize: 128,
-            handler: "index.main"
-        }
-    ]
+            handler: "index.main",
+        },
+    ],
 };

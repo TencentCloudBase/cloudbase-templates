@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+@import url(./improt.reset.css);
+
+body,html{
+    background-color:#0C008C;
+}
+
+/************* banner start ************/
+.hero-media{
+    width:100%;
+    height:234.5px;
+    padding-top:63px;
+    text-align: center;
+    box-sizing: border-box;
+    background-repeat:no-repeat;
+    background-position:50%;
+    background-size:cover;
+}
+.hero-media--inner{
+    padding:0 20px;
+    box-sizing: border-box;
+}
+.hero-media__title{
+    font-size:42px;
+    font-weight:600;
+    margin-bottom:2px;
+    color:rgba(255,255,255,1);
+    background:linear-gradient(121deg, rgba(249,189,130,1) 0%, rgba(255,242,199,1) 49%, rgba(255,189,111,1) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.hero-media__slogan{
+    font-size:17px;
+    font-weight:600;
+}
+.hero-media__slogan span{
+    display: inline-block;
+    vertical-align: middle;
+    padding:0 10px;
+    position: relative;
+    color:rgba(255,255,255,1);
+    background:linear-gradient(121deg, rgba(249,189,130,1) 0%, rgba(255,242,199,1) 49%, rgba(255,189,111,1) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.hero-media__slogan span + span::before{
+    content: '';
+    display: inline-block;
+    width:2px;
+    height:15px;
+    position: absolute;
+    left:-1px;
+    top:50%;
+    margin-top:-7.5px;
+    background-color: #A7833C;
+}
+/************* banner end ************/
+
+/************* section title start ************/
+.section-title{
+    padding:0 42.5px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top:-25px;
+}
+.section-title::before,
+.section-title::after{
+    content:'';
+    display: block;
+    height:50px;
+    width:22.5px;
+    position: absolute;
+    top:0;
+    background-size:100% 100%;
+}
+.section-title::before{
+    left:20px;
+    background-image:url(../css/img/slice/png/section-title-left@2x.png);
+}
+.section-title::after{
+    right:20px;
+    background-image:url(../css/img/slice/png/section-title-right@2x.png);
+}
+.section-title--inner{
+    background-image:url(../css/img/section-title-bg@2x.png);
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+    color:rgba(255,255,255,1);
+    background-size:100% 100%;
+    background-repeat: repeat-x;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/************* section title end ************/
+
+/************* section list start ************/
+.section-list{
+    padding:0 30px;
+    box-sizing: border-box;
+}
+.section-list--inner{
+    padding:20px 16px;
+    margin-bottom:20px;
+    box-sizing: border-box;
+    background: #3800b5;
+    background: -moz-linear-gradient(top,  #3800b5 0%, #6e10cc 100%);
+    background: -webkit-linear-gradient(top,  #3800b5 0%,#6e10cc 100%);
+    background: linear-gradient(to bottom,  #3800b5 0%,#6e10cc 100%);
+}
+.section-items{
+    padding:0 39px;
+    box-sizing: border-box;
+}
+.section-item{
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    position: relative;
+}
+.section-item + .section-item{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.section-item + .section-item::before{
+    content:'';
+    display: block;
+    width:100%;
+    height:1px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #39008F;
+}
+.section-item .start{
+    width:72px;
+    font-size: 0;
+}
+.section-item .start img{
+    width: 72px;
+    height: 72px;
+    display:block;
+}
+.section-item .end{
+    flex: 1;
+    padding-top: 14px;
+    padding-left:4px;
+    box-sizing: border-box;
+}
+.section-item .text-title{
+    font-size: 14px;
+    color:rgba(255,255,255,1);
+    margin-bottom:6px;
+}
+.section-item .text-des{
+    font-size:12px;
+    color:rgba(255,255,255,0.6);
+}
+/************* section list end ************/
+
+/************* 按钮 start ************/
+.btn-media{
+    margin-top:20px;
+}
+.btn-media .btn{
+    height:48px;
+    line-height:48px;
+    width:100%;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    background: #ffd68c;
+    font-weight:600;
+    color:rgba(79,32,0,1);
+    background: -moz-linear-gradient(left,  #ffd68c 0%, #ff9949 100%);
+    background: -webkit-linear-gradient(left,  #ffd68c 0%,#ff9949 100%);
+    background: linear-gradient(to right,  #ffd68c 0%,#ff9949 100%);
+}
+/************* 按钮 end ************/
+
+@media(max-width:340px){
+    .hero-media{
+        padding-top: 70px;
+    }
+    .hero-media__title{
+        font-size: 32px;
+    }
+    .hero-media__slogan{
+        font-size:14px;
+    }
+    .section-list--inner{
+        padding:15px;
+    }
+    .section-items{
+        padding:0;
+    }
+    .section-item + .section-item{
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .btn-media .btn{
+        height: 36px;
+        line-height: 36px;
+    }
+}

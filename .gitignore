@@ -1,2 +1,3 @@
 .zip-files
 node_modules
+.DS_Store
