@@ -5,17 +5,10 @@
     {
       "name": "app",
       "timeout": 5,
-      "envVariables": {},
       "runtime": "Java8",
-      "triggers": [
-        {
-          "name": "myTrigger",
-          "type": "timer",
-          "config": "0 0 2 1 * * *"
-        }
-      ],
+      "memorySize": 512,
       "params": {},
-      "handler": "index.main"
+      "handler": "example.Hello::mainHandler"
     }
   ]
 }
