@@ -154,4 +154,10 @@ li {
 a {
   color: #42b983;
 }
+
+.hello {
+  max-width: 500px;
+  margin: 0 auto;
+  word-break: break-all;
+}
 </style>
