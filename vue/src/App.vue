@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <img class="logo" alt="CloudBase logo" src="./assets/cloudbase.png" />
+    <img class="logo" alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="欢迎使用云开发 CloudBase Vue.js App" />
   </div>
 </template>
 
@@ -24,5 +25,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.logo {
+  width: 120px;
+  padding: 10px;
 }
 </style>
