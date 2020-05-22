@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prestart": "npm install",
+    "start": "npm run serve",
+    "deploy": "cloudbase framework:deploy",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@cloudbase/vue-provider": "^0.1.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
