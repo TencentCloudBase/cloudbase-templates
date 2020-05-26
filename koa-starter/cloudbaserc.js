@@ -5,10 +5,10 @@ module.exports = {
         {
             name: "app",
             // 超时时间
-            timeout: 5,
+            timeout: 60,
             // 环境变量
             envVariables: {},
-            runtime: "Nodejs8.9",
+            runtime: "Nodejs10.15",
             // 内存 256
             memorySize: 256,
             handler: "index.main"
