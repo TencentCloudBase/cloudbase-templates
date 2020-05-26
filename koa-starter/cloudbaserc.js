@@ -1,5 +1,5 @@
 module.exports = {
-    envId: "jianrizhi-14f5ba",
+    envId: "{{envId}}",
     functionRoot: "./functions",
     functions: [
         {
