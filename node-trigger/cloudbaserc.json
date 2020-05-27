@@ -1,0 +1,16 @@
+{
+  "envId": "{{envId}}",
+  "functionRoot": "./functions",
+  "functions": [
+    {
+      "name": "app",
+      "timeout": 5,
+      "runtime": "Nodejs10.15",
+      "memorySize": 128,
+      "triggers": [
+        { "name": "trigger", "type": "timer", "config": "0 0 2 1 * * *" }
+      ],
+      "handler": "index.main"
+    }
+  ]
+}
