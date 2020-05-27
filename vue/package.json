@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "prestart": "npm install",
-    "start": "npm run serve",
+    "dev": "npm run serve",
     "deploy": "cloudbase framework:deploy",
+    "deploy:client": "cloudbase framework:client",
+    "deploy:server": "cloudbase framework:server",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -16,6 +18,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@cloudbase/cli": "latest",
     "@vue/cli-plugin-babel": "^4.3.0",
     "@vue/cli-plugin-eslint": "^4.3.0",
     "@vue/cli-service": "^4.3.0",
