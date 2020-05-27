@@ -1,0 +1,23 @@
+{
+  "envId": "{{envId}}",
+  "functionRoot": "./functions",
+  "functions": [
+    {
+      "name": "scf-html",
+      "timeout": 5,
+      "runtime": "Nodejs10.15",
+      "memorySize": 128,
+      "handler": "index.main"
+    }
+  ],
+  "framework": {
+    "plugins": {
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {
+          "outputPath": "functions"
+        }
+      }
+    }
+  }
+}
