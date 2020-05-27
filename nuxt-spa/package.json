@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-spa",
+  "version": "1.0.0",
+  "description": "云开发 CloudBase Nuxt SPA App",
+  "author": "Booker Zhao",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "dev": "nuxt",
+    "deploy": "cloudbase framework:deploy",
+    "deploy:client": "cloudbase framework:deploy client",
+    "deploy:server": "cloudbase framework:deploy server",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@cloudbase/vue-provider": "^0.1.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@cloudbase/cli": "latest",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^4.0.0-0"
+  }
+}
