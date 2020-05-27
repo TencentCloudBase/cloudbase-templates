@@ -6,8 +6,8 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { Server } from 'http';
 import { ExpressAdapter } from '@nestjs/platform-express';
-import * as awsServerlessExpress from 'aws-serverless-express';
-import * as express from 'express';
+import awsServerlessExpress from 'aws-serverless-express';
+import express from 'express';
 
 let cachedServer: Server;
 

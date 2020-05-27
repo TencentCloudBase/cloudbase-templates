@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build:cloudbase": "npm run build && cp package.json dist/*.js functions/app",
+    "build:cloudbase": "nest build --path tsconfig.cloudbase.json && node scripts/cp.js",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
