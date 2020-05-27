@@ -1,0 +1,15 @@
+{
+  "envId": "{{envId}}",
+  "functionRoot": "./functions",
+  "functions": [
+    {
+      "name": "app",
+      "timeout": 60,
+      "envVariables": {},
+      "runtime": "Nodejs10.15",
+      "memorySize": 256,
+      "handler": "index.main",
+      "installDependency": true
+    }
+  ]
+}
