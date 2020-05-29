@@ -1,0 +1,14 @@
+{
+  "envId": "{{envId}}",
+  "framework": {
+    "plugins": {
+      "node": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "name": "express-starter",
+          "path": "/express-starter"
+        }
+      }
+    }
+  }
+}
