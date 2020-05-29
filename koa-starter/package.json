@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "cloudbase framework:deploy",
+    "deploy:server": "cloudbase framework:deploy node"
   },
   "author": "yuanxindong",
   "license": "ISC",
