@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-spa",
+  "name": "nuxt-ssr",
   "version": "1.0.0",
-  "description": "云开发 CloudBase Nuxt SPA App",
+  "description": "云开发 CloudBase Nuxt SSR App",
   "author": "Booker Zhao",
   "private": true,
   "scripts": {
