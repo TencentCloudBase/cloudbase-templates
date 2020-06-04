@@ -149,6 +149,10 @@ export default {
   letter-spacing: 1px;
 }
 
+.links a {
+  margin-bottom: 8px;
+}
+
 .subtitle {
   font-weight: 400;
   font-size: 20px;
