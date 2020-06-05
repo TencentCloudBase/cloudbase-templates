@@ -1,17 +1,5 @@
 {
   "envId": "{{envId}}",
-  "functionRoot": "cloudfunctions",
-  "functions": [
-    {
-      "name": "helloworld",
-      "config": {
-        "timeout": 5,
-        "envVariables": {},
-        "runtime": "Nodejs10.15",
-        "memorySize": 128
-      }
-    }
-  ],
   "framework": {
     "plugins": {
       "client": {
@@ -24,7 +12,18 @@
       "server": {
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
-          "outputPath": "cloudfunctions"
+          "outputPath": "cloudfunctions",
+          "functions": [
+            {
+              "name": "helloworld",
+              "config": {
+                "timeout": 5,
+                "envVariables": {},
+                "runtime": "Nodejs10.15",
+                "memorySize": 128
+              }
+            }
+          ]
         }
       }
     }
