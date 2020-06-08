@@ -42,6 +42,9 @@ export default {
    ** Nuxt.js modules
    */
   modules: [],
+  router: {
+    base: "/nuxt-ssr"
+  },
   /*
    ** Build configuration
    */
