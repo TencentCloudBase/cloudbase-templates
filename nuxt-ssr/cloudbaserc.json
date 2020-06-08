@@ -21,7 +21,7 @@
       "server": {
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
-          "outputPath": "cloudfunctions"
+          "outputPath": "functionRootPath"
         }
       }
     }
