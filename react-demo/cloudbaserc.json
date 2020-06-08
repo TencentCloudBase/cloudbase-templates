@@ -10,5 +10,22 @@
       "name": "base64",
       "config": { "timeout": 5, "envVariables": {}, "runtime": "Nodejs10.15", "memorySize": 128 }
     }
-  ]
+  ],
+  "framework": {
+    "plugins": {
+      "react": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "buildCommand": "npm run build",
+          "outputPath": "build"
+        }
+      },
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {
+          "functionRootPath": "functions"
+        }
+      }
+    }
+  }
 }
