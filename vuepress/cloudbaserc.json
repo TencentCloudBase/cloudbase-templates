@@ -1,0 +1,16 @@
+{
+  "envId": "{{envId}}",
+  "functionRoot": "./functions",
+  "functions": [],
+  "framework": {
+    "plugins": {
+      "vuepress": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "buildCommand": "npm run build",
+          "outputPath": ".vuepress/dist"
+        }
+      }
+    }
+  }
+}
