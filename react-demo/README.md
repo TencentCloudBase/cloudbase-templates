@@ -54,4 +54,4 @@ npm run lint
 
 ### React 开发文档
 
-查看 [Configuration Reference](https://reactjs.bootcss.com/docs/getting-started.html).
+查看 [开发者文档](https://reactjs.bootcss.com/docs/getting-started.html).
