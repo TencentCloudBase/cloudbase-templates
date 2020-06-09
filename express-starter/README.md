@@ -2,9 +2,7 @@
 
 # Express 应用示例
 
-这个目录是基于云开发的一个 [Express](https://expressjs.com/zh-cn/)  应用示例，包含  Express + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
-
-
+这个目录是基于云开发的一个 [Express](https://expressjs.com/zh-cn/) 应用示例，包含 Express + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 部署一个 Express 应用
 
@@ -28,8 +26,6 @@ cloudbase init --tempate express-starter
 cloudbase framework:deploy
 ```
 
-
-
 ## 开发命令及配置
 
 ### 本地开发
@@ -42,12 +38,6 @@ npm run dev
 
 ```
 npm run deploy
-```
-
-### Lint
-
-```
-npm run lint
 ```
 
 ### CloudBase Framework 相关开发配置

@@ -1,6 +1,6 @@
 {
-  "envId": "{{envId}}",
   "functionRoot": "./functions",
+  "envId": "{{envId}}",
   "functions": [
     {
       "name": "app",
@@ -10,5 +10,13 @@
       "params": {},
       "handler": "example.Hello::mainHandler"
     }
-  ]
+  ],
+  "framework": {
+    "plugins": {
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {}
+      }
+    }
+  }
 }
