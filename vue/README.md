@@ -2,9 +2,7 @@
 
 # Vue 全栈应用示例
 
-这个目录是基于云开发的一个 [Vue](https://cn.vuejs.org/)  全栈应用示例，包含  Vue + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
-
-
+这个目录是基于云开发的一个 [Vue](https://cn.vuejs.org/) 全栈应用示例，包含 Vue + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 部署一个 Vue 全栈应用
 
@@ -17,7 +15,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate vue
+cloudbase init --template vue
 ```
 
 ### 步骤三. 一键部署
@@ -27,8 +25,6 @@ cloudbase init --tempate vue
 ```
 cloudbase framework:deploy
 ```
-
-
 
 ## 开发命令及配置
 

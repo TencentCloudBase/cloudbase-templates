@@ -2,9 +2,7 @@
 
 # Node 应用示例
 
-这个目录是基于云开发的一个 [Node](https://nodejs.org/zh-cn/)  应用示例，包含  Node + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
-
-
+这个目录是基于云开发的一个 [Node](https://nodejs.org/zh-cn/) 应用示例，包含 Node + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 部署一个 Node 应用
 
@@ -17,7 +15,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate node-starter
+cloudbase init --template node-starter
 ```
 
 ### 步骤三. 一键部署
@@ -27,8 +25,6 @@ cloudbase init --tempate node-starter
 ```
 cloudbase framework:deploy
 ```
-
-
 
 ## 开发命令及配置
 
@@ -54,6 +50,6 @@ npm run lint
 
 查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
 
-### Node API文档
+### Node API 文档
 
 查看 [starter](https://nodejs.org/api/).
