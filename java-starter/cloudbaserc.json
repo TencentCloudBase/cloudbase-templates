@@ -3,7 +3,7 @@
   "envId": "{{envId}}",
   "functions": [
     {
-      "name": "app",
+      "name": "java-app",
       "timeout": 5,
       "runtime": "Java8",
       "memorySize": 512,
