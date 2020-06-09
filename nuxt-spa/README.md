@@ -1,4 +1,4 @@
-<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/6d48ab8bc29c38558cd258b28b14f94e.jpg"></a>
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/4a2bb546f6d59133976dccd1ac962378.png"></a>
 
 # Nuxt Spa 应用示例
 
