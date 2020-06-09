@@ -47,7 +47,7 @@
     "not dead"
   ],
   "vue": {
-    "publicPath": "vue",
+    "publicPath": "/vue/",
     "devServer": {
       "port": 5000
     }
