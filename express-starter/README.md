@@ -15,7 +15,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate express-starter
+cloudbase init --template express-starter
 ```
 
 ### 步骤三. 一键部署

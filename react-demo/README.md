@@ -2,9 +2,7 @@
 
 # React 全栈应用示例
 
-这个目录是基于云开发的一个 [React](https://reactjs.bootcss.com/)  全栈应用示例，包含  React + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
-
-
+这个目录是基于云开发的一个 [React](https://reactjs.bootcss.com/) 全栈应用示例，包含 React + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 部署一个 React 全栈应用
 
@@ -17,7 +15,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate react-demo
+cloudbase init --template react-demo
 ```
 
 ### 步骤三. 一键部署

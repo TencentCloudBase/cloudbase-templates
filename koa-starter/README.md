@@ -15,7 +15,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate koa-starter
+cloudbase init --template koa-starter
 ```
 
 ### 步骤三. 一键部署

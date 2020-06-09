@@ -15,7 +15,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate vuepress
+cloudbase init --template vuepress
 ```
 
 ### 步骤三. 一键部署
