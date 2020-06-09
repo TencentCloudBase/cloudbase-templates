@@ -42,10 +42,14 @@ export default {
    ** Nuxt.js modules
    */
   modules: [],
+  router: {
+    base: "/nuxt-spa"
+  },
   /*
    ** Build configuration
    */
   build: {
+    publicPath: "/nuxt-spa/_nuxt/",
     /*
      ** You can extend webpack config here
      */
