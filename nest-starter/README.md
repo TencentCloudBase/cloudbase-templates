@@ -1,57 +1,59 @@
-## 安装
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/ed779c8b4eba63e0ac5cfa43974c906f.png"></a>
 
-```bash
-$ npm install
+# Nest 应用示例
+
+这个目录是基于云开发的一个 [Nest](https://nestjs.com/)  应用示例，包含  Nest + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+
+
+
+## 部署一个 Nest 应用
+
+### 步骤一. 准备工作
+
+具体步骤请参照 [准备云开发环境和 CloudBase CLI 命令工具](https://github.com/TencentCloudBase/cloudbase-framework/blob/master/CLI_GUIDE.md)
+
+### 步骤二. 初始化应用示例
+
+在命令行执行
+
+```
+cloudbase init --tempate nest-starter
 ```
 
-## 本地启动
+### 步骤三. 一键部署
 
-```bash
-# 开发模式
-$ npm run start
+进入到项目目录，在命令行执行
 
-# watch模式
-$ npm run start:dev
-
-# 生产模式
-$ npm run start:prod
+```
+cloudbase framework:deploy
 ```
 
-## 测试
 
-```bash
-# 单元测试
-$ npm run test
 
-# e2e测试
-$ npm run test:e2e
+## 开发命令及配置
 
-# 测试覆盖率
-$ npm run test:cov
+### 本地开发
+
+```
+npm run dev
 ```
 
-## 配合云开发(CloudBase)
+### 上线部署
 
-**本地调试**：
+```
+npm run deploy
+```
 
-使用 Nest 提供的命令即可。例如: `npm run start`
+### Lint
 
-**打包**：
+```
+npm run lint
+```
 
-运行 `npm run build` 产出可以运行与服务器的代码。
+### CloudBase Framework 相关开发配置
 
-运行 `npm run build:cloudbase` 产出可以托管于云开发(CloudBase)的代码。
+查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
 
-**部署到云开发**：
+### Nest 开发文档
 
-部署到云开发的文件存放于 `functions/app/` 目录下。
-
-请根据需求修改 `cloudbaserc.js` 下的字段信息。
-
-使用 CloudBase CLI 部署到云开发：`cloudbase functions:deploy app`
-
-使用 CloudBase CLI 创建 Http Service，例如：`cloudbase service:create -p /app -f app`。你可以通过访问 自定义域名 + `/app` 的形式访问 Nest 服务。
-
-**全局修改**：
-
-需要修改 `index.ts` 才能使得全局配置在云开发环境中生效。
+查看 [starter](https://docs.nestjs.com/).
