@@ -17,3 +17,10 @@ Desktop.ini
 !.htaccess
 !/.gitignore
 !/.travis.yml
+# Created by https://www.toptal.com/developers/gitignore/api/php
+# Edit at https://www.toptal.com/developers/gitignore?templates=php
+
+#!! ERROR: php is undefined. Use list command to see defined gitignore types !!#
+
+# End of https://www.toptal.com/developers/gitignore/api/php
+n

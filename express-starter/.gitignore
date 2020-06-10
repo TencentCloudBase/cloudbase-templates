@@ -1,24 +1,6 @@
-# dependencies
-node_modules
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-# Created by https://www.toptal.com/developers/gitignore/api/react,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=react,node
+# Created by https://www.toptal.com/developers/gitignore/api/node
+# Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 ### Node ###
 # Logs
@@ -129,18 +111,12 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-### react ###
-.DS_*
-**/*.backup.*
-**/*.back.*
+# End of https://www.toptal.com/developers/gitignore/api/node
+n
+# Created by https://www.toptal.com/developers/gitignore/api/express
+# Edit at https://www.toptal.com/developers/gitignore?templates=express
 
-node_modules
+#!! ERROR: express is undefined. Use list command to see defined gitignore types !!#
 
-*.sublime*
-
-psd
-thumb
-sketch
-
-# End of https://www.toptal.com/developers/gitignore/api/react,node
+# End of https://www.toptal.com/developers/gitignore/api/express
 n
