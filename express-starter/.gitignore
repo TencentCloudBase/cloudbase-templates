@@ -113,10 +113,3 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 n
-# Created by https://www.toptal.com/developers/gitignore/api/express
-# Edit at https://www.toptal.com/developers/gitignore?templates=express
-
-#!! ERROR: express is undefined. Use list command to see defined gitignore types !!#
-
-# End of https://www.toptal.com/developers/gitignore/api/express
-n
