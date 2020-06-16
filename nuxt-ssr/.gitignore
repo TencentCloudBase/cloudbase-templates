@@ -88,3 +88,20 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Created by https://www.toptal.com/developers/gitignore/api/nuxt
+# Edit at https://www.toptal.com/developers/gitignore?templates=nuxt
+
+### Nuxt ###
+# gitignore template for Nuxt.js projects
+#
+# Recommended template: Node.gitignore
+
+# Nuxt build
+.nuxt
+
+ # Nuxt generate
+dist
+
+# End of https://www.toptal.com/developers/gitignore/api/nuxt
+n
