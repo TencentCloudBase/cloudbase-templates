@@ -7,7 +7,7 @@
         "inputs": {
           "buildCommand": "npm run build",
           "outputPath": "build",
-          "cloudPath": "/react-starter"
+          "cloudPath": "/react-custom"
         }
       },
       "server": {
