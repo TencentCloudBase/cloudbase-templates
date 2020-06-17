@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { getApp } from "../../tcb";
-import "./index.css";
+import React, { useState, useEffect } from 'react'
+import { getApp } from '../../tcb'
+import './index.css'
 
 function LoginFail() {
-  const envId = "";
+  const envId = ''
 
   return (
     <>
       <h2>为了演示云开发功能，需要开启匿名登录</h2>
       <p>设置 src/tcb.js 中的环境 Id 变量：envId 为你的环境 Id</p>
       <p>
-        登录腾讯云 Cloudbase
-        <a
-          href="https://console.cloud.tencent.com/tcb"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        登录腾讯云 Cloudbase &nbsp;
+        <a href="https://console.cloud.tencent.com/tcb" target="_blank" rel="noopener noreferrer">
           控制台
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,54 +69,53 @@ function LoginFail() {
         />
       </p>
     </>
-  );
+  )
 }
 
 export default function Hello() {
-  const app = getApp();
-  const [isLoginSuccess, setLoginState] = useState(false);
-  const [callFunctionResult, setCallFunctionResult] = useState("");
-  const loginState = app.auth().hasLoginState();
+  const app = getApp()
+  const [isLoginSuccess, setLoginState] = useState(false)
+  const [callFunctionResult, setCallFunctionResult] = useState('')
+  const loginState = app.auth().hasLoginState()
 
   useEffect(() => {
     if (loginState) {
-      setLoginState(true);
-      return;
+      setLoginState(true)
+      return
     }
 
     const login = async () => {
       try {
-        await app
-          .auth({ persistence: "local" })
-          .anonymousAuthProvider()
-          .signIn();
+        await app.auth({ persistence: 'local' }).anonymousAuthProvider().signIn()
 
-        setLoginState(true);
+        setLoginState(true)
       } catch (e) {
-        if (e.message.includes("100007")) {
-          setLoginState(false);
+        if (e.message.includes('100007')) {
+          setLoginState(false)
         }
-        console.error(e);
-        console.log(e.code);
+        console.error(e)
+        console.log(e.code)
       }
-    };
-    console.log("登录");
-    login();
-  }, [app, loginState]);
+    }
+    console.log('登录')
+    login()
+  }, [app, loginState])
 
   const callFunction = async () => {
     try {
       const res = await app.callFunction({
-        name: "helloworld",
+        name: 'helloworld',
         data: {
-          foo: "bar",
+          foo: 'bar'
         },
-      });
-      setCallFunctionResult(JSON.stringify(res));
+        query: {},
+        parse: true
+      })
+      setCallFunctionResult(JSON.stringify(res))
     } catch (e) {
-      setCallFunctionResult(e.message);
+      setCallFunctionResult(e.message)
     }
-  };
+  }
 
   return (
     <div className="hello">
@@ -130,7 +125,7 @@ export default function Hello() {
           <>
             <div>
               <h2>登录云开发</h2>
-              <p>{loginState ? "已登录" : "未登录"}</p>
+              <p>{loginState ? '已登录' : '未登录'}</p>
             </div>
 
             <h2>调用云函数</h2>
@@ -139,8 +134,8 @@ export default function Hello() {
               <a
                 href="/#"
                 onClick={(e) => {
-                  e.preventDefault();
-                  callFunction();
+                  e.preventDefault()
+                  callFunction()
                 }}
               >
                 调用 hello world 云函数
@@ -156,5 +151,5 @@ export default function Hello() {
         )}
       </div>
     </div>
-  );
+  )
 }
