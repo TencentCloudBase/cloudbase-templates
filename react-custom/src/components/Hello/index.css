@@ -1,0 +1,10 @@
+.hello {
+  max-width: 80%;
+  margin: 0 auto;
+  word-break: break-all;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
