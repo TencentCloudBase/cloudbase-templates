@@ -3,12 +3,14 @@
   "functionRoot": "./functions",
   "functions": [],
   "framework": {
+    "name": "vuepress-app",
     "plugins": {
       "vuepress": {
         "use": "@cloudbase/framework-plugin-website",
         "inputs": {
           "buildCommand": "npm run build",
-          "outputPath": ".vuepress/dist"
+          "outputPath": ".vuepress/dist",
+          "cloudPath": "/vuepress"
         }
       }
     }
