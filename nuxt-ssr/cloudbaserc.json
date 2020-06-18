@@ -13,6 +13,7 @@
     }
   ],
   "framework": {
+    "name": "nuxt-ssr",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-nuxt",

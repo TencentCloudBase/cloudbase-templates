@@ -7,8 +7,7 @@
         href="https://docs.cloudbase.net/cloudbase-vue/introduce.html"
         target="_blank"
         rel="noopener"
-        >云开发 Vue 插件</a
-      >
+      >云开发 Vue 插件</a>
       文档
     </p>
 
@@ -23,44 +22,24 @@
         点击
         <a href="javascript:;" @click="callFunction">调用 hello world 云函数</a>
       </p>
-      <p><b>云函数执行结果</b></p>
+      <p>
+        <b>云函数执行结果</b>
+      </p>
       <p>{{ callFunctionResult }}</p>
     </template>
     <template v-else-if="isLoginSuccss === false">
-      <h2>
-        为了演示云开发功能，需要开启匿名登录
-      </h2>
+      <h2>为了演示云开发功能，需要开启匿名登录</h2>
       <p>
-        登录腾讯云 Cloudbase
+        在
         <a
-          href="https://console.cloud.tencent.com/tcb"
-          target="_blank"
-          rel="noopener noreferrer"
-          >控制台<svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            x="0px"
-            y="0px"
-            viewBox="0 0 100 100"
-            width="15"
-            height="15"
-            class="icon outbound"
-          >
-            <path
-              fill="currentColor"
-              d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
-            ></path>
-            <polygon
-              fill="currentColor"
-              points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-            ></polygon></svg></a
-        >，在<a
           v-bind:href="
-            `https://console.cloud.tencent.com/tcb/env/setting?tab=loginConfig&envId=${envId}`
+            `https://console.cloud.tencent.com/tcb/env/login?envId=${envId}`
           "
           target="_blank"
           rel="noopener noreferrer"
-          >“环境-&gt;环境设置-&gt;登录方式”<svg
+        >
+          控制台登录授权页面
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             x="0px"
@@ -73,19 +52,18 @@
             <path
               fill="currentColor"
               d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
-            ></path>
+            />
             <polygon
               fill="currentColor"
               points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
-            ></polygon></svg></a
-        >中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
+            />
+          </svg>
+        </a>中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
       </p>
       <p>
-        <img
-          src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png"
-          alt="开启匿名登录"
-        /></p
-    ></template>
+        <img src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png" alt="开启匿名登录" />
+      </p>
+    </template>
   </div>
 </template>
 
@@ -96,11 +74,11 @@ export default {
     return {
       isLoginSuccss: null,
       envId: "",
-      callFunctionResult: "",
+      callFunctionResult: ""
     };
   },
   props: {
-    msg: String,
+    msg: String
   },
   async created() {
     this.envId = this.$cloudbase.config.env;
@@ -126,15 +104,15 @@ export default {
         const res = await this.$cloudbase.callFunction({
           name: "helloworld",
           data: {
-            foo: "bar",
-          },
+            foo: "bar"
+          }
         });
         this.callFunctionResult = res;
       } catch (e) {
         this.callFunctionResult = e.message;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

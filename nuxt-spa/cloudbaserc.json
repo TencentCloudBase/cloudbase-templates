@@ -13,6 +13,7 @@
     }
   ],
   "framework": {
+    "name": "nuxt-spa",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-website",
