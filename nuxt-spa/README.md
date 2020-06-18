@@ -4,6 +4,10 @@
 
 这个目录是基于云开发的一个 [Nuxt-Spa](https://zh.nuxtjs.org/) 应用示例，包含 Nuxt + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
+## 线上预览地址
+
+![https://framework-1258016615.tcloudbaseapp.com/nuxts-spa](https://framework-1258016615.tcloudbaseapp.com/spa)
+
 ## 部署一个 Nuxt Spa 应用
 
 ### 步骤一. 准备工作

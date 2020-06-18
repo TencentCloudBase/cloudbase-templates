@@ -1,6 +1,7 @@
 {
   "envId": "{{envId}}",
   "framework": {
+    "name": "koa-starter",
     "plugins": {
       "node": {
         "use": "@cloudbase/framework-plugin-node",

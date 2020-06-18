@@ -1,6 +1,7 @@
 {
   "envId": "{{envId}}",
   "framework": {
+    "name": "vue",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-website",

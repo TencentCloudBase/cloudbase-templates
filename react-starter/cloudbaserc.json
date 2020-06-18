@@ -1,6 +1,7 @@
 {
   "envId": "{{envId}}",
   "framework": {
+    "name": "react-starter",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-website",

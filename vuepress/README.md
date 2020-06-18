@@ -6,7 +6,7 @@
 
 ## 线上预览地址
 
-![https://tcli-1258016615.tcloudbaseapp.com/vuepress/](https://tcli-1258016615.tcloudbaseapp.com/vuepress/)
+![https://framework-1258016615.tcloudbaseapp.com/vuepress/](https://tcli-1258016615.tcloudbaseapp.com/vuepress/)
 
 ## 部署一个 VuePress 网站
 
