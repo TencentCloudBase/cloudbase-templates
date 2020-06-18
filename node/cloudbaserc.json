@@ -1,0 +1,16 @@
+{
+  "envId": "{{envId}}",
+  "framework": {
+    "name": "node-capp",
+    "plugins": {
+      "node": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "name": "node-capp",
+          "path": "/node-capp",
+          "platform": "container"
+        }
+      }
+    }
+  }
+}
