@@ -1,10 +1,10 @@
-<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/bc7e3f2989fcf65b2fe8ad37ea3f69a9.png"></a>
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/82da2591cd2aed610d7f91f9dd881930.png"></a>
 
-# Koa 云应用示例
+# Node 云应用示例
 
-这个目录是基于云开发的一个 [Koa](https://koa.bootcss.com/) 云应用示例，包含 Koa + 云应用，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发的 Serverless 云应用环境
+这个目录是基于云开发的一个 Node.js 的 [Koa](https://koa.bootcss.com/) 云应用示例，包含 Koa + 云应用，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发的 Serverless 云应用环境
 
-## 部署一个 Koa 云应用
+## 部署一个 Node 云应用
 
 ### 步骤一. 准备工作
 

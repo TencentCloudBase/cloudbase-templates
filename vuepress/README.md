@@ -4,9 +4,9 @@
 
 这个目录是基于云开发的一个 [VuePress](https://vuepress.vuejs.org/) 网站应用示例，包含 VuePress 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
-## 线上预览地址
+## 线上演示地址
 
-![https://framework-1258016615.tcloudbaseapp.com/vuepress/](https://tcli-1258016615.tcloudbaseapp.com/vuepress/)
+![https://framework-1258016615.tcloudbaseapp.com/vuepress/](https://framework-1258016615.tcloudbaseapp.com/vuepress/)
 
 ## 部署一个 VuePress 网站
 
