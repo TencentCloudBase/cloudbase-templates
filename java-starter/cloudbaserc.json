@@ -12,6 +12,7 @@
     }
   ],
   "framework": {
+    "name": "java-starter",
     "plugins": {
       "function": {
         "use": "@cloudbase/framework-plugin-function",
