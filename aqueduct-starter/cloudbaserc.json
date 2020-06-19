@@ -1,0 +1,16 @@
+{
+  "envId": "{{envId}}",
+  "framework": {
+    "name": "aqueduct-starter",
+    "plugins": {
+      "server": {
+        "use": "@cloudbase/framework-plugin-dart",
+        "inputs": {
+          "serviceName": "dartapp",
+          "servicePath": "/dartapp",
+          "localPath": "./"
+        }
+      }
+    }
+  }
+}
