@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/d94d993269048beb4827b2612ed53692.png"></a>
 
-## Available Scripts
+# React 应用示例
 
-In the project directory, you can run:
+这个目录是基于云开发的一个 [React](https://reactjs.bootcss.com/) 应用示例，包含 React + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
-### `yarn start`
+## 部署一个 React 应用
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 步骤一. 准备工作
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+具体步骤请参照 [准备云开发环境和 CloudBase CLI 命令工具](https://github.com/TencentCloudBase/cloudbase-framework/blob/master/CLI_GUIDE.md)
 
-### `yarn test`
+### 步骤二. 初始化应用示例
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+在命令行执行
 
-### `yarn build`
+```
+cloudbase init --template react-starter
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 步骤三. 修改配置
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+将您的环境 ID 填写到 `src/tcb.js` 文件的中
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 步骤四. 一键部署
 
-### `yarn eject`
+进入到项目目录，在命令行执行
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+cloudbase framework:deploy
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 开发命令及配置
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 本地开发
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm run start
+```
 
-## Learn More
+### 上线部署
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm run deploy
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### CloudBase Framework 相关开发配置
 
-### Code Splitting
+查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### React 开发文档
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+查看 [开发者文档](https://reactjs.bootcss.com/docs/getting-started.html).
