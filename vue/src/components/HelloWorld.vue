@@ -7,7 +7,8 @@
         href="https://docs.cloudbase.net/cloudbase-vue/introduce.html"
         target="_blank"
         rel="noopener"
-      >云开发 Vue 插件</a>
+        >云开发 Vue 插件</a
+      >
       文档
     </p>
 
@@ -57,11 +58,14 @@
               fill="currentColor"
               points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
             />
-          </svg>
-        </a>中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
+          </svg> </a
+        >中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
       </p>
       <p>
-        <img src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png" alt="开启匿名登录" />
+        <img
+          src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png"
+          alt="开启匿名登录"
+        />
       </p>
     </template>
   </div>
@@ -74,11 +78,11 @@ export default {
     return {
       isLoginSuccss: null,
       envId: "",
-      callFunctionResult: ""
+      callFunctionResult: "",
     };
   },
   props: {
-    msg: String
+    msg: String,
   },
   async created() {
     this.envId = this.$cloudbase.config.env;
@@ -102,17 +106,17 @@ export default {
     async callFunction() {
       try {
         const res = await this.$cloudbase.callFunction({
-          name: "helloworld",
+          name: "vue-echo",
           data: {
-            foo: "bar"
-          }
+            foo: "bar",
+          },
         });
         this.callFunctionResult = res;
       } catch (e) {
         this.callFunctionResult = e.message;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

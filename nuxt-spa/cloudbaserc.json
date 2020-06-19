@@ -3,7 +3,7 @@
   "functionRoot": "cloudfunctions",
   "functions": [
     {
-      "name": "helloworld",
+      "name": "nuxt-spa-echo",
       "config": {
         "timeout": 5,
         "envVariables": {},

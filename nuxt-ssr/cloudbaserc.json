@@ -3,7 +3,7 @@
   "functionRoot": "cloudfunctions",
   "functions": [
     {
-      "name": "helloworld",
+      "name": "nuxt-ssr-echo",
       "config": {
         "timeout": 5,
         "envVariables": {},
