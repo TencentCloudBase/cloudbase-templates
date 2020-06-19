@@ -10,5 +10,14 @@
       "params": {},
       "handler": "index.main"
     }
-  ]
+  ],
+  "framework": {
+    "name": "php-starter",
+    "plugins": {
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {}
+      }
+    }
+  }
 }

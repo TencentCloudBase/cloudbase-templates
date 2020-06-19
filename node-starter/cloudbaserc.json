@@ -10,5 +10,14 @@
       "memorySize": 128,
       "handler": "index.main"
     }
-  ]
+  ],
+  "framework": {
+    "name": "node-starter",
+    "plugins": {
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {}
+      }
+    }
+  }
 }

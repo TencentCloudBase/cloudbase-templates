@@ -12,5 +12,14 @@
       ],
       "handler": "index.main"
     }
-  ]
+  ],
+  "framework": {
+    "name": "node-trigger",
+    "plugins": {
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {}
+      }
+    }
+  }
 }
