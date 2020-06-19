@@ -17,7 +17,7 @@
           "functionRootPath": "cloudfunctions",
           "functions": [
             {
-              "name": "helloworld",
+              "name": "vue-echo",
               "config": {
                 "timeout": 5,
                 "envVariables": {},

@@ -41,7 +41,7 @@
         <p>
           点击
           <a href="javascript:;" @click="callFunction"
-            >调用 hello world 云函数</a
+            >调用 nuxt-spa-echo 云函数</a
           >
         </p>
         <p><b>云函数执行结果</b></p>
@@ -115,7 +115,7 @@ export default {
     async callFunction() {
       try {
         const res = await this.$cloudbase.callFunction({
-          name: "helloworld",
+          name: "nuxt-spa-echo",
           data: {
             foo: "bar"
           }
