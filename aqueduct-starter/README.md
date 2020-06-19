@@ -1,10 +1,10 @@
-<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/f675c24f791a28bf0dbd3650ef28c122.jpg"></a>
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/2d1c438165480b9a7937e3b81c4873e3.jpg"></a>
 
-# Aqueduct 应用示例
+# Aqueduct 云应用示例
 
-这个目录是基于云开发的一个 [Aqueduct](https://aqueduct.io/) 应用示例，包含 Aqueduct Server 模板，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Aqueduct](https://aqueduct.io/) (Dart Server) 云应用示例，包含 Aqueduct 模板，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
-## 部署一个 Aqueduct 应用
+## 部署一个 Aqueduct 云应用
 
 ### 步骤一. 准备工作
 
@@ -15,7 +15,7 @@
 在命令行执行
 
 ```
-cloudbase init --template aqueduct-starter
+cloudbase init --template dart
 ```
 
 ### 步骤三. 一键部署
