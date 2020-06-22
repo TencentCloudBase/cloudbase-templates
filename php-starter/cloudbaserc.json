@@ -3,7 +3,7 @@
   "functionRoot": "./functions",
   "functions": [
     {
-      "name": "app",
+      "name": "php-app",
       "timeout": 5,
       "envVariables": {},
       "runtime": "Php7",
