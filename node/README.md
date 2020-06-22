@@ -4,6 +4,10 @@
 
 这个目录是基于云开发的一个 Node.js 的 [Koa](https://koa.bootcss.com/) 云应用示例，包含 Koa + 云应用，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发的 Serverless 云应用环境
 
+## 线上演示地址
+
+[https://framework-1258016615.tcloudbaseapp.com/node-capp/](https://framework-1258016615.tcloudbaseapp.com/node-capp/)
+
 ## 部署一个 Node 云应用
 
 ### 步骤一. 准备工作
