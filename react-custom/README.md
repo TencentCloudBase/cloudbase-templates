@@ -6,6 +6,10 @@
 
 此项目基于 React + TypeScript 开发，并采用了 [react-app-rewired](https://github.com/timarney/react-app-rewired) 修改 CRA（create-react-app） 配置，提供了修改 CRA（create-react-app）构建配置的能力。
 
+## 线上演示地址
+
+[https://framework-1258016615.tcloudbaseapp.com/react-custom/](https://framework-1258016615.tcloudbaseapp.com/react-custom/)
+
 ## 部署一个 React 应用
 
 ### 步骤一. 准备工作

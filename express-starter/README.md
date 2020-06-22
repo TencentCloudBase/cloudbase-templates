@@ -4,6 +4,10 @@
 
 这个目录是基于云开发的一个 [Express](https://expressjs.com/zh-cn/) 应用示例，包含 Express + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
+## 线上演示地址
+
+[https://framework-1258016615.tcloudbaseapp.com/express-starter/](https://framework-1258016615.tcloudbaseapp.com/express-starter/)
+
 ## 部署一个 Express 应用
 
 ### 步骤一. 准备工作

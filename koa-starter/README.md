@@ -4,6 +4,10 @@
 
 这个目录是基于云开发的一个 [Koa](https://koa.bootcss.com/) 应用示例，包含 Koa + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
+## 线上演示地址
+
+[https://framework-1258016615.tcloudbaseapp.com/koa-starter/](https://framework-1258016615.tcloudbaseapp.com/koa-starter/)
+
 ## 部署一个 Koa 应用
 
 ### 步骤一. 准备工作

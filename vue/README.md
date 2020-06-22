@@ -6,7 +6,7 @@
 
 ## 线上演示地址
 
-![https://framework-1258016615.tcloudbaseapp.com/vue/](https://framework-1258016615.tcloudbaseapp.com/vue/)
+[https://framework-1258016615.tcloudbaseapp.com/vue/](https://framework-1258016615.tcloudbaseapp.com/vue/)
 
 ## 部署一个 Vue 全栈应用
 
