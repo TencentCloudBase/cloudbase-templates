@@ -1,5 +1,6 @@
 {
   "envId": "{{envId}}",
+  "functionRoot": "cloudfunctions",
   "framework": {
     "plugins": {
       "client": {
@@ -16,7 +17,7 @@
           "functionRootPath": "cloudfunctions",
           "functions": [
             {
-              "name": "helloworld",
+              "name": "custom-app",
               "config": {
                 "timeout": 5,
                 "envVariables": {},

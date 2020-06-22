@@ -1,5 +1,6 @@
 {
   "envId": "{{envId}}",
+  "functionRoot": "cloudfunctions",
   "framework": {
     "name": "react-starter",
     "plugins": {
@@ -17,7 +18,7 @@
           "functionRootPath": "cloudfunctions",
           "functions": [
             {
-              "name": "helloworld",
+              "name": "stater-app",
               "config": {
                 "timeout": 5,
                 "envVariables": {},
