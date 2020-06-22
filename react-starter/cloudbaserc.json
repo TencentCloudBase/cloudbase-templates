@@ -1,5 +1,6 @@
 {
   "envId": "{{envId}}",
+  "functionRoot": "cloudfunctions",
   "framework": {
     "name": "react-starter",
     "plugins": {
