@@ -3,7 +3,7 @@
   "functionRoot": "./functions",
   "functions": [
     {
-      "name": "app",
+      "name": "get-sign",
       "timeout": 5,
       "envVariables": {},
       "runtime": "Nodejs10.15",
