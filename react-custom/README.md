@@ -1,4 +1,4 @@
-<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/d94d993269048beb4827b2612ed53692.png"></a>
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/dbc204f8fc25387645aea9282c6d1b99.png"></a>
 
 # React 自定义应用示例
 
