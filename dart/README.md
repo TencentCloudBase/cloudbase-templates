@@ -6,7 +6,7 @@
 
 ## 线上演示地址
 
-[https://framework-1258016615.tcloudbaseapp.com/dartapp/](https://framework-1258016615.tcloudbaseapp.com/dartapp/)
+[https://framework.service.tcloudbase.com/dartapp/](https://framework.service.tcloudbase.com/dartapp/)
 
 ## 部署一个 Aqueduct 云应用
 
