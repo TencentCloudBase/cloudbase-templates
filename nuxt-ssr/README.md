@@ -6,7 +6,7 @@
 
 ## 线上演示地址
 
-[https://framework-1258016615.tcloudbaseapp.com/nuxt-ssr/](https://framework-1258016615.tcloudbaseapp.com/nuxt-ssr/)
+[https://framework.service.tcloudbase.com/nuxt-ssr/](https://framework.service.tcloudbase.com/nuxt-ssr/)
 
 ## 部署一个 Nuxt SSR 应用
 
