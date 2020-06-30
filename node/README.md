@@ -6,7 +6,7 @@
 
 ## 线上演示地址
 
-[https://framework-1258016615.tcloudbaseapp.com/node-capp/](https://framework-1258016615.tcloudbaseapp.com/node-capp/)
+[https://framework.service.tcloudbase.com/node-capp/](https://framework.service.tcloudbase.com/node-capp/)
 
 ## 部署一个 Node 云应用
 
