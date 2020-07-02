@@ -6,7 +6,7 @@
 
 ## 线上演示地址
 
-![https://framework-1258016615.tcloudbaseapp.com/vuepress/](https://framework-1258016615.tcloudbaseapp.com/vuepress/)
+[https://framework-1258016615.tcloudbaseapp.com/vuepress/](https://framework-1258016615.tcloudbaseapp.com/vuepress/)
 
 ## 部署一个 VuePress 网站
 

@@ -6,7 +6,7 @@
 
 ## 线上预览地址
 
-![https://framework-1258016615.tcloudbaseapp.com/nuxts-spa](https://framework-1258016615.tcloudbaseapp.com/spa)
+[https://framework-1258016615.tcloudbaseapp.com/nuxt-spa](https://framework-1258016615.tcloudbaseapp.com/nuxt-spa/)
 
 ## 部署一个 Nuxt Spa 应用
 
