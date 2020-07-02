@@ -1,0 +1,16 @@
+{
+  "envId": "log",
+  "framework": {
+    "name": "koa-starter",
+    "plugins": {
+      "node": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "entry": "entry.js",
+          "name": "egg-starter",
+          "path": "/egg-starter"
+        }
+      }
+    }
+  }
+}
