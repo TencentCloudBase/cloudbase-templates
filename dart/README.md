@@ -4,6 +4,10 @@
 
 这个目录是基于云开发的一个 [Aqueduct](https://aqueduct.io/) (Dart Server) 云应用示例，包含 Aqueduct 模板，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
+## 线上演示地址
+
+[https://framework.service.tcloudbase.com/dartapp/](https://framework.service.tcloudbase.com/dartapp/)
+
 ## 部署一个 Aqueduct 云应用
 
 ### 步骤一. 准备工作
@@ -47,3 +51,38 @@ pub run test
 ### CloudBase Framework 相关开发配置
 
 查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
+
+### Aqueduct 开发文档
+
+查看 [starter](https://aqueduct.io/docs/)
+
+## 使用云数据库
+
+模板里已经集成了云数据库，通过下列步骤便可快速开始。
+
+### 步骤一. 注入环境信息和密钥
+
+在 **channel.dart** 的 `prepare()` 函数里，填入云数据库需要的信息
+
+```dart
+/// 初始化云数据库
+database = CloudBaseDatabase(CloudBaseCore.init({
+  /// 云开发环境 ID
+  'env': 'your-env-id',         
+  /// 腾讯云 API 固定密钥对
+  /// 获取路径: https://console.cloud.tencent.com/cam/capi
+  'secretId': 'your-secretId',
+  /// 同上
+  'secretKey': 'your-secretKey' 
+}));
+```
+
+### 步骤二. 创建数据
+
+在控制台创建 **user** 集合，并在集合里适当添加文档。
+
+[前往创建数据](https://console.cloud.tencent.com/tcb/db)
+
+### 步骤三. 请求数据
+
+部署服务后，访问子路径 **/user**，结果返回 **user** 集合的数量。

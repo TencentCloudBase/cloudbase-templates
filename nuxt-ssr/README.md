@@ -2,9 +2,11 @@
 
 # Nuxt SSR 应用示例
 
-这个目录是基于云开发的一个 [Nuxt-SSR](https://zh.nuxtjs.org/)  应用示例，包含  Nuxt + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Nuxt-SSR](https://zh.nuxtjs.org/) 应用示例，包含 Nuxt + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
+## 线上演示地址
 
+[https://framework.service.tcloudbase.com/nuxt-ssr/](https://framework.service.tcloudbase.com/nuxt-ssr/)
 
 ## 部署一个 Nuxt SSR 应用
 
@@ -27,8 +29,6 @@ cloudbase init --tempate nuxt-ssr
 ```
 cloudbase framework:deploy
 ```
-
-
 
 ## 开发命令及配置
 
