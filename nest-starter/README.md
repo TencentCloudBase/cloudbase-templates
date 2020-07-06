@@ -1,4 +1,4 @@
-<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/ed779c8b4eba63e0ac5cfa43974c906f.png"></a>
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/79fdd61df8b2154ccaa479301fcc57a6.png"></a>
 
 # Nest 应用示例
 
