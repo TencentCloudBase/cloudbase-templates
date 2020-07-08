@@ -1,14 +1,14 @@
 {
-  "envId": "{{envId}}",
+  "envId": "log",
   "framework": {
-    "name": "nest-starter",
+    "name": "koa-starter",
     "plugins": {
       "node": {
         "use": "@cloudbase/framework-plugin-node",
         "inputs": {
-          "name": "nest-starter",
-          "path": "/nest-starter",
-          "entry": "app.js"
+          "entry": "entry.js",
+          "name": "egg-starter",
+          "path": "/egg-starter"
         }
       }
     }
