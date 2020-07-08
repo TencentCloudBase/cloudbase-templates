@@ -72,6 +72,20 @@ function LoginFail() {
           alt="开启匿名登录"
         />
       </p>
+      <h2>本示例 Github 源码地址</h2>
+      <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter">
+        https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter
+      </a>
+      <h2>开发部署工具</h2>
+      <a
+        href="https://github.com/TencentCloudBase/cloudbase-framework"
+        title="CloudBase Framework: 云开发前后端一体化部署工具"
+      >
+        <img
+          width="420"
+          src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
+        />
+      </a>
     </>
   );
 }

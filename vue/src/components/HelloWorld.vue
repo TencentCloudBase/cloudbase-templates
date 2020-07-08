@@ -68,6 +68,23 @@
         />
       </p>
     </template>
+    <h2>
+      本示例 Github 源码地址：
+    </h2>
+    <a
+      href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue"
+      >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue</a
+    >
+    <h2>开发部署工具</h2>
+    <a
+      href="https://github.com/TencentCloudBase/cloudbase-framework"
+      title="CloudBase Framework: 云开发前后端一体化部署工具"
+    >
+      <img
+        width="420"
+        src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
+      />
+    </a>
   </div>
 </template>
 
@@ -88,10 +105,11 @@ export default {
     this.envId = this.$cloudbase.config.env;
     // 以匿名登录为例
     try {
-      await this.$cloudbase
-        .auth({ persistence: "local" })
-        .anonymousAuthProvider()
-        .signIn();
+      const auth = this.$cloudbase.auth({ persistence: "local" });
+
+      if (!auth.hasLoginState()) {
+        await auth.anonymousAuthProvider().signIn();
+      }
 
       this.isLoginSuccss = true;
     } catch (e) {
