@@ -7,7 +7,7 @@ environment:
 
 dependencies:
   aqueduct: 3.3.0+1
-  cloudbase_dart: ^0.0.3
+  cloudbase_dart: ^0.0.5
 
 dev_dependencies:
   test: ^1.0.0
