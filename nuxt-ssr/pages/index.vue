@@ -120,7 +120,7 @@ export default {
     try {
       const auth = this.$cloudbase.auth({ persistence: "local" });
 
-      if (!auth.hashLoginState()) {
+      if (!auth.hasLoginState()) {
         await auth.anonymousAuthProvider().signIn();
       }
 
