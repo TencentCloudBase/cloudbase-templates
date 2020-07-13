@@ -42,7 +42,7 @@ export function MainLayout(props: React.PropsWithChildren<ILayoutProps>) {
               <Menu
                 mode="inline"
                 onSelect={({ key }) => {
-                  history.push(key)
+                  history.push(key as string)
                 }}
               >
                 {menus.map((menu) => (
