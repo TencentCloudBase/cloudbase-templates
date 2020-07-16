@@ -8,7 +8,13 @@
         "inputs": {
           "name": "nest-starter",
           "path": "/nest-starter",
-          "entry": "app.js"
+          "entry": "app.js",
+          "functionOptions": {
+            "timeout": 5,
+            "envVariables": {
+              "NODE_ENV": "production"
+            }
+          }
         }
       }
     }
