@@ -1,7 +1,12 @@
 import Vue from "vue";
 import Cloudbase from "@cloudbase/vue-provider";
-import config from "../cloudbaserc";
 
-Vue.use(Cloudbase, {
-  env: config.envId
-});
+export default async () => {
+  const envId = await fetch("/nuxt-ssr-echo/")
+    .then(response => response.json())
+    .then(data => data.envId);
+
+  Vue.use(Cloudbase, {
+    env: envId
+  });
+};

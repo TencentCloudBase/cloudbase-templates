@@ -62,12 +62,12 @@
               >控制台</a
             >，在<a
               v-bind:href="
-                `https://console.cloud.tencent.com/tcb/env/setting?tab=loginConfig&envId=${envId}`
+                `https://console.cloud.tencent.com/tcb/env/login?envId=${envId}`
               "
               class="links"
               target="_blank"
               rel="noopener noreferrer"
-              >环境-&gt;环境设置-&gt;登录方式</a
+              >登录授权</a
             >
             中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
           </p>
@@ -120,7 +120,7 @@ export default {
     try {
       const auth = this.$cloudbase.auth({ persistence: "local" });
 
-      if (!auth.hashLoginState()) {
+      if (!auth.hasLoginState()) {
         await auth.anonymousAuthProvider().signIn();
       }
 
