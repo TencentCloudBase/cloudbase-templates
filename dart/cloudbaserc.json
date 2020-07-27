@@ -10,6 +10,18 @@
           "servicePath": "/dartapp",
           "localPath": "./"
         }
+      },
+      "db": {
+        "use": "@cloudbase/framework-plugin-database",
+        "inputs": {
+          "collections": [
+            {
+              "collectionName": "user",
+              "description": "用户集合",
+              "aclTag": "PRIVATE"
+            }
+          ]
+        }
       }
     }
   }

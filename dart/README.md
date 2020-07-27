@@ -77,12 +77,6 @@ database = CloudBaseDatabase(CloudBaseCore.init({
 }));
 ```
 
-### 步骤二. 创建数据
-
-在控制台创建 **user** 集合，并在集合里适当添加文档。
-
-[前往创建数据](https://console.cloud.tencent.com/tcb/db)
-
-### 步骤三. 请求数据
+### 步骤二. 请求数据
 
 部署服务后，访问子路径 **/user**，结果返回 **user** 集合的数量。
