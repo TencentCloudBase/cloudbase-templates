@@ -71,7 +71,10 @@
     "start": "node scripts/start.js",
     "build": "PUBLIC_URL=. node scripts/build.js",
     "build-windows": "set PUBLIC_URL=.&& node scripts/build.js",
-    "fix": "eslint src --fix"
+    "fix": "eslint src --fix",
+    "deploy": "cloudbase framework:deploy",
+    "deploy:client": "cloudbase framework:client",
+    "deploy:server": "cloudbase framework:server"
   },
   "jest": {
     "collectCoverageFrom": [
