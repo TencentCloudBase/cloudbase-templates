@@ -25,8 +25,7 @@ define('my-app', class extends WeElement {
           />
           <h1 class="app-title">Welcome to {this.name}</h1>
         </header>
-        <app-intro arr={[1, 2, 3]} />
-        <o-button>I am omiu button</o-button>
+        <app-intro msg="欢迎使用云开发 CloudBase Omi Starter" />
       </div>
     )
   }
