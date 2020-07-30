@@ -60,7 +60,7 @@ class AppChannel extends ApplicationChannel {
     /// 云数据库详细文档请参考: https://docs.cloudbase.net/api-reference/flutter/database.html
     router.route("/user").linkFunction((request) async {
       try {
-        /// 这里需要用户在云开发控制台先创建数据库集合 user
+        /// 部署 dart server 的过程中已经声明式的创建了 user 集合
         final res = await database.collection('user').count();
 
         /// 处理错误
