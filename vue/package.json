@@ -6,8 +6,8 @@
     "prestart": "npm install",
     "dev": "npm run serve",
     "deploy": "cloudbase framework:deploy",
-    "deploy:client": "cloudbase framework:client",
-    "deploy:server": "cloudbase framework:server",
+    "deploy:client": "cloudbase framework:deploy client",
+    "deploy:server": "cloudbase framework:deploy server",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
