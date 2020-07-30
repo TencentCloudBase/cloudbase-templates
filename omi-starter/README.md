@@ -1,4 +1,4 @@
-<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://user-images.githubusercontent.com/11473889/88812126-f4086f00-d1e9-11ea-9999-5e6e6f0963cc.png"></a>
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://user-images.githubusercontent.com/11473889/88882843-4f2b7780-d265-11ea-8fcf-49cb297240c7.png"></a>
 
 # Omi 应用示例
 
