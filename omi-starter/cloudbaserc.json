@@ -9,7 +9,7 @@
         "inputs": {
           "buildCommand": "npm run build",
           "outputPath": "build",
-          "cloudPath": "/omi-starter"
+          "cloudPath": "/omi-starter/"
         }
       },
       "server": {
