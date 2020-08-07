@@ -13,7 +13,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@cloudbase/vue-provider": "^0.1.1",
+    "@cloudbase/vue-provider": "^0.3.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
