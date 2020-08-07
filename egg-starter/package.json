@@ -28,7 +28,7 @@
     "stop": "egg-scripts stop --title=egg-server-egg-starter",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
-    "deploy": "cloudbase framework deploy",
+    "deploy": "cloudbase framework:deploy",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
     "autod": "autod"
