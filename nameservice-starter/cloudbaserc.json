@@ -1,0 +1,23 @@
+{
+  "envId": "{{envId}}",
+  "functionRoot": "./functions",
+  "functions": [
+    {
+      "name": "name-service",
+      "timeout": 5,
+      "envVariables": {},
+      "runtime": "Nodejs10.15",
+      "memorySize": 128,
+      "handler": "index.main"
+    }
+  ],
+  "framework": {
+    "name": "nameservice-starter",
+    "plugins": {
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {}
+      }
+    }
+  }
+}
