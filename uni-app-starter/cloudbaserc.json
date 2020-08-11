@@ -1,5 +1,5 @@
 {
-    "envId": "dev-f7534e",
+    "envId": "{{envId}}",
     "functionRoot": "cloudfunctions",
     "framework": {
         "name": "uni-app",
