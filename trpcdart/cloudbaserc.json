@@ -1,0 +1,17 @@
+{
+    "version": "2.0",
+    "envId": "{{env.ENV_ID}}",
+    "framework": {
+      "name": "demoservice",
+      "plugins": {
+        "server": {
+          "use": "@cloudbase/framework-plugin-dart",
+          "inputs": {
+            "serviceName": "demoservice",
+            "servicePath": "/demoservice",
+            "localPath": "./"
+          }
+        }
+      }
+    }
+  }
