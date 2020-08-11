@@ -68,14 +68,18 @@
     </template>
     <h2>本示例 Github 源码地址：</h2>
     <a
-      href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue"
-    >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue</a>
+      href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/uni-app-starter"
+    >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/uni-app-starter</a>
     <h2>开发部署工具</h2>
     <a
       href="https://github.com/TencentCloudBase/cloudbase-framework"
       title="CloudBase Framework: 云开发前后端一体化部署工具"
     >
-      <img class="cloudbase-logo" width="100%" src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png" />
+      <img
+        class="cloudbase-logo"
+        width="100%"
+        src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
+      />
     </a>
   </div>
 </template>
@@ -126,7 +130,7 @@ export default {
           name: "uni-app-echo",
           data: {
             name: "erikqin",
-            sex: 1
+            sex: 1,
           },
         });
         this.callFunctionResult = JSON.stringify(res);
@@ -141,39 +145,39 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-    margin: 15rpx;
-    font-size: 40rpx;
+  margin: 15rpx;
+  font-size: 40rpx;
 }
 h2 {
-    margin: 15rpx;
-    font-size: 30rpx;
+  margin: 15rpx;
+  font-size: 30rpx;
 }
 h3 {
-    font-size: 20rpx;
-    margin: 40rpx 0 0;
+  font-size: 20rpx;
+  margin: 40rpx 0 0;
 }
 p {
   line-height: 60rpx;
 }
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 li {
-    display: inline-block;
-    margin: 0 10rpx;
+  display: inline-block;
+  margin: 0 10rpx;
 }
 a {
-    color: #42b983;
+  color: #42b983;
 }
 
 .hello {
-    margin: 0 auto;
-    word-break: break-all;
+  margin: 0 auto;
+  word-break: break-all;
 }
 
 .cloudbase-logo {
-    max-width: 420rpx;
-    max-height: 60rpx;
+  max-width: 420rpx;
+  max-height: 60rpx;
 }
 </style>
