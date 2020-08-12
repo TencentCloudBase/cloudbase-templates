@@ -15,7 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@cloudbase/vue-provider": "^0.1.1",
+    "@cloudbase/vue-provider": "^0.3.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {

@@ -46,4 +46,4 @@ npm run deploy
 
 ### Egg 开发文档
 
-查看 [starter](https://expressjs.com/zh-cn/starter/installing.html).
+查看 [starter](https://eggjs.org/en/intro/quickstart.html).

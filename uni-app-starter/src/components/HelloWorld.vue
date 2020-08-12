@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <!-- #ifdef H5 -->
     <p>
       点击查看
       <a
@@ -10,6 +11,7 @@
       >云开发 Vue 插件</a>
       文档
     </p>
+    <!-- #endif -->
 
     <template v-if="isLoginSuccss">
       <LoginState v-slot="{ loginState }">
@@ -66,14 +68,18 @@
     </template>
     <h2>本示例 Github 源码地址：</h2>
     <a
-      href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue"
-    >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue</a>
+      href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/uni-app-starter"
+    >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/uni-app-starter</a>
     <h2>开发部署工具</h2>
     <a
       href="https://github.com/TencentCloudBase/cloudbase-framework"
       title="CloudBase Framework: 云开发前后端一体化部署工具"
     >
-      <img width="420" src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png" />
+      <img
+        class="cloudbase-logo"
+        width="100%"
+        src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
+      />
     </a>
   </div>
 </template>
@@ -94,6 +100,7 @@ export default {
   async created() {
     this.envId = this.$cloudbase.config.env;
     // 以匿名登录为例
+    // #ifdef H5
     try {
       const auth = this.$cloudbase.auth({ persistence: "local" });
 
@@ -111,17 +118,22 @@ export default {
       console.error(e);
       console.log(e.code);
     }
+    // #endif
+    // #ifdef MP-WEIXIN
+    this.isLoginSuccss = true;
+    // #endif
   },
   methods: {
     async callFunction() {
       try {
         const res = await this.$cloudbase.callFunction({
-          name: "vue-echo",
+          name: "uni-app-echo",
           data: {
-            foo: "bar",
+            name: "erikqin",
+            sex: 1,
           },
         });
-        this.callFunctionResult = res;
+        this.callFunctionResult = JSON.stringify(res);
       } catch (e) {
         this.callFunctionResult = e.message;
       }
@@ -132,8 +144,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  margin: 15rpx;
+  font-size: 40rpx;
+}
+h2 {
+  margin: 15rpx;
+  font-size: 30rpx;
+}
 h3 {
-  margin: 40px 0 0;
+  font-size: 20rpx;
+  margin: 40rpx 0 0;
+}
+p {
+  line-height: 60rpx;
 }
 ul {
   list-style-type: none;
@@ -141,15 +165,19 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 10rpx;
 }
 a {
   color: #42b983;
 }
 
 .hello {
-  max-width: 500px;
   margin: 0 auto;
   word-break: break-all;
+}
+
+.cloudbase-logo {
+  max-width: 420rpx;
+  max-height: 60rpx;
 }
 </style>
