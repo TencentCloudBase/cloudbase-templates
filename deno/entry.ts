@@ -22,7 +22,7 @@ app.use((ctx) => {
   ctx.response.body = 'Hello Deno!';
 });
 
-const port:number = Number(Deno.env.get('PORT') || 3000);
+const port:number = Number(Deno.env.get('PORT') || 80);
 
 app.listen({
     port
