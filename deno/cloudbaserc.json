@@ -1,5 +1,5 @@
 {
-  "envId": "test-1gxe3u9377a09734",
+  "envId": "{{envId}}",
   "framework": {
     "name": "deno-app",
     "plugins": {
