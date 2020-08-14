@@ -25,6 +25,6 @@ app.use((ctx) => {
 const port:number = Number(Deno.env.get('PORT') || 80);
 
 app.listen({
-    port
+  port
 });
 console.log(`server listen at http://localhost:${port}/`);
