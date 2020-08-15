@@ -1,14 +1,14 @@
-<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/721bfc09d7e0a2ccd49b40ac6287f8ac.png"></a>
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/625bbdc0b37744aae33aff46b8aeeeb8.png"></a>
 
-# uni-app 多端全栈应用示例
+# Taro 多端全栈应用示例
 
-这个目录是基于云开发的一个 [uni-app](https://uniapp.dcloud.io/) 全栈应用示例，包含 uni-app + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Taro](https://taro-docs.jd.com/) 全栈应用示例，包含 Taro + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 线上演示地址
 
-[https://static-176d4a.tcloudbaseapp.com/uni-app/](https://static-176d4a.tcloudbaseapp.com/uni-app/)
+[https://static-176d4a.tcloudbaseapp.com/taro-starter](https://static-176d4a.tcloudbaseapp.com/taro-starter)
 
-## 部署一个 uni-app 多端全栈应用
+## 部署一个 Taro 多端全栈应用
 
 ### 创建云开发环境
 
@@ -33,7 +33,7 @@
 在命令行执行
 
 ``` bash
-cloudbase init --template uni-app
+cloudbase init --template taro-starter
 ```
 
 ### 步骤三. 一键部署
@@ -49,6 +49,8 @@ cloudbase framework:deploy
 #### 小程序部署
 
 在使用CI之前，需要先前往mp平台下载上传密钥，具体操作方式，可以[点击前往](https://developers.weixin.qq.com/miniprogram/dev/devtools/ci.html)
+
+然后还要修改`project.config.json`的`appid`，密钥和`appid`要对应上才可以
 
 进入到项目目录，在命令行执行
 
@@ -84,6 +86,6 @@ npm run lint
 
 查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
 
-### uni-app 相关开发配置
+### Taro 相关开发配置
 
-查看 [Configuration Reference](https://uniapp.dcloud.io/collocation/pages).
+查看 [Configuration Reference](https://taro-docs.jd.com/taro/docs/config).
