@@ -33,7 +33,7 @@
 在命令行执行
 
 ``` bash
-cloudbase init --template uni-app
+cloudbase init --template uni-app-starter
 ```
 
 ### 步骤三. 一键部署
