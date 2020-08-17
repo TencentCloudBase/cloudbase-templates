@@ -28,10 +28,17 @@ cloudbase framework:deploy
 
 ## 开发命令及配置
 
+### 配置启动环境
+
+服务使用 [denon](https://github.com/denosaurs/denon) 管理进程
+
+配置 denon.yml 参见 [denon yml 配置说明](https://github.com/denosaurs/denon#yaml-configuration-denonyml-template)
+
 ### 本地开发
 
 ```bash
-deno run entry.ts
+deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon@2.3.2/denon.ts
+PORT=3000 denon start
 ```
 
 ### CloudBase Framework 相关开发配置
