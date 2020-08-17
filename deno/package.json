@@ -1,0 +1,20 @@
+{
+  "name": "deno",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "deno run entry.ts",
+    "commit": "npx git-cz",
+    "deploy": "cloudbase framework:deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
