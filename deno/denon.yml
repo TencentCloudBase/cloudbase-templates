@@ -1,0 +1,6 @@
+allow:
+  - net
+  - env
+
+scripts:
+  start: deno run entry.ts
