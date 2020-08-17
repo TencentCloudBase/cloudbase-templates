@@ -85,7 +85,7 @@ class Hello extends Component {
 
   callFunction = () => async () => {
     const res = await Taro.cloud.callFunction({
-      name: "uni-app-echo",
+      name: "taro-stater-app",
       data: {
         foo: "bar",
         name: 'erikqin'
