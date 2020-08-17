@@ -1,0 +1,14 @@
+### Deno ###
+# Logs
+logs
+*.log
+TCBSAM.yaml
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock

@@ -1,0 +1,12 @@
+{
+  "envId": "{{envId}}",
+  "framework": {
+    "name": "deno-app",
+    "plugins": {
+      "deno": {
+        "use": "@cloudbase/framework-plugin-deno",
+        "inputs": {}
+      }
+    }
+  }
+}
