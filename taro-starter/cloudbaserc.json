@@ -1,0 +1,32 @@
+{
+  "envId": "{{envId}}",
+  "functionRoot": "cloudfunctions",
+  "framework": {
+    "name": "taro-starter",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "buildCommand": "npm run build",
+          "outputPath": "dist",
+          "cloudPath": "/taro-starter"
+        }
+      },
+      "server": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {
+          "functionRootPath": "cloudfunctions",
+          "functions": [{
+            "name": "taro-stater-app",
+            "config": {
+              "timeout": 5,
+              "envVariables": {},
+              "runtime": "Nodejs10.15",
+              "memorySize": 128
+            }
+          }]
+        }
+      }
+    }
+  }
+}

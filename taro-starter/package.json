@@ -1,0 +1,70 @@
+{
+  "name": "taro-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "taro-starter",
+  "templateInfo": {
+    "name": "mobx",
+    "typescript": false,
+    "css": "less"
+  },
+  "scripts": {
+    "serve": "npm run dev:h5",
+    "build": "npm run build:h5",
+    "deploy": "cloudbase framework:deploy",
+    "deploy:client": "cloudbase framework:deploy client",
+    "deploy:server": "cloudbase framework:deploy server",
+    "build:weapp": "taro build --type weapp",
+    "build:swan": "taro build --type swan",
+    "build:alipay": "taro build --type alipay",
+    "build:tt": "taro build --type tt",
+    "build:h5": "taro build --type h5",
+    "build:rn": "taro build --type rn",
+    "build:qq": "taro build --type qq",
+    "build:quickapp": "taro build --type quickapp",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "dev:swan": "npm run build:swan -- --watch",
+    "dev:alipay": "npm run build:alipay -- --watch",
+    "dev:tt": "npm run build:tt -- --watch",
+    "dev:h5": "npm run build:h5 -- --watch",
+    "dev:rn": "npm run build:rn -- --watch",
+    "dev:qq": "npm run build:qq -- --watch",
+    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "wxci:preview": "node wx_ci.js preview",
+    "wxci:upload": "node wx_ci.js upload"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@tarojs/components": "3.0.7",
+    "@tarojs/react": "3.0.7",
+    "@tarojs/runtime": "3.0.7",
+    "@tarojs/taro": "3.0.7",
+    "mobx": "^5.15.5",
+    "mobx-react": "^6.2.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tcb-js-sdk": "^1.10.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@tarojs/mini-runner": "3.0.7",
+    "@tarojs/webpack-runner": "3.0.7",
+    "@types/react": "^16.9.46",
+    "@types/webpack-env": "^1.15.2",
+    "babel-preset-taro": "3.0.7",
+    "eslint": "^7.7.0",
+    "eslint-config-taro": "3.0.7",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "miniprogram-ci": "^1.0.72",
+    "stylelint": "13.6.1"
+  }
+}
