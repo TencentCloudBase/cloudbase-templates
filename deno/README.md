@@ -26,19 +26,36 @@ cloudbase init --template deno
 cloudbase framework:deploy
 ```
 
-## 开发命令及配置
+## 本地开发
 
-### 配置启动环境
+### 配置开发环境
 
-服务使用 [denon](https://github.com/denosaurs/denon) 管理进程
+安装 denon
+
+```bash
+deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon/denon.ts
+```
+
+服务使用 [denon](https://github.com/denosaurs/denon) 管理进程。
 
 配置 denon.yml 参见 [denon yml 配置说明](https://github.com/denosaurs/denon#yaml-configuration-denonyml-template)
 
-### 本地开发
+### 启动调试环境
 
 ```bash
-deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon@2.3.2/denon.ts
-PORT=3000 denon start
+denon dev
+```
+
+### 代码格式检查
+
+```bash
+denon lint
+```
+
+### 构建部署文件
+
+```bash
+denon build
 ```
 
 ### CloudBase Framework 相关开发配置

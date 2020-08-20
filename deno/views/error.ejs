@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover" />
+<meta name="format-detection" content="telephone=no" />
+<title><%= title %></title>
+<style>
+body{
+  margin: 0;
+  padding: 0;
+}
+h1,h2{
+  margin: 0;
+  padding: 0;
+}
+.error{
+  margin: 12px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #333;
+}
+.error-title{
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d9534f;
+}
+.error-status{
+  color: #333;
+}
+.error-status span{
+  color: #d9534f;
+}
+.error-caption{
+  line-height: 36px;
+  font-size: 18px;
+  color: #333;
+}
+.error-code{
+  margin: 0;
+  padding: 12px;
+  background-color: #333;
+  border-radius: 4px;
+  overflow: auto;
+}
+.error-code code{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+</style>
+</head>
+<body>
+<div id="error" class="error">
+  <h1 class="error-title"><%= title %></h1>
+  <p class="error-status">Status: <span><%= status %></span></p>
+  <h2 class="error-caption">Message:</h2>
+  <pre class="error-code"><code><%= message %></code></pre>
+  <% if (stack) { %>
+    <h2 class="error-caption">Stack:</h2>
+    <pre class="error-code"><code><%= stack %></code></pre>
+  <% } %>
+</div>
+</body>
+</html>

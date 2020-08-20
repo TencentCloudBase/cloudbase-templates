@@ -1,0 +1,31 @@
+<%- await include(`${Deno.cwd()}/views/common/header.ejs`, {
+  title
+}) %>
+<div class="wrapper">
+  <h1 class="title">Hello Tencent CloudBase + Deno + Oak !</h1>
+  <section class="content">
+    <p>Welcome to Hello Tencent CloudBase + Deno + Oak !</p>
+  </section>
+  <section class="content">
+    <h3 class="caption">本示例 Github 源码地址</h3>
+    <p><a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/deno">https://github.com/TencentCloudBase/cloudbase-templates/tree/master/deno</a></p>
+  </section>
+  <section class="content"></section>
+    <h3 class="caption">开发部署工具</h3>
+    <p>
+      <a href="https://github.com/TencentCloudBase/cloudbase-framework" title="CloudBase Framework: 云开发前后端一体化部署工具">
+        <img style="max-width: 420px; width: 100%;" src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png">
+      </a>
+    </p>
+  </section>
+  <section class="content"></section>
+    <h3 class="caption">示例:</h3>
+    <ul class="list">
+      <li><a href="info">/info</a> 读取远程文件</li>
+      <li><a href="error">/error</a> 报错信息包装呈现</li>
+      <li><a href="api/info">/api/info</a> 普通 json 接口</li>
+      <li><a href="api/error">/api/error</a> 接口报错封装</li>
+    </ul>
+  </section>
+</div>
+<%- await include(`${Deno.cwd()}/views/common/footer.ejs`) %>

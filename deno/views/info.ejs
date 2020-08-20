@@ -1,0 +1,12 @@
+<%- await include(`${Deno.cwd()}/views/common/header.ejs`, {
+  title
+}) %>
+<div class="wrapper">
+  <h1 class="title">Page: <%= title %></h1>
+  <h3 class="caption">remote md file</h3>
+  <section class="content">
+    <p>url: <a href="https://raw.githubusercontent.com/denoland/deno/master/README.md">https://raw.githubusercontent.com/denoland/deno/master/README.md</a></p>
+  </section>
+  <pre class="code"><code><%= mdContent %></code></pre>
+</div>
+<%- await include(`${Deno.cwd()}/views/common/footer.ejs`) %>
