@@ -12,17 +12,13 @@
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
           "functionRootPath": "cloudfunctions",
-          "functions": [
-            {
-              "name": "next-ssr-echo",
-              "config": {
-                "timeout": 5,
-                "envVariables": {},
-                "runtime": "Nodejs10.15",
-                "memorySize": 128
-              }
-            }
-          ],
+          "functions": [{
+            "name": "next-ssr-echo",
+            "timeout": 5,
+            "envVariables": {},
+            "runtime": "Nodejs10.15",
+            "memory": 128
+          }],
           "servicePaths": {
             "next-ssr-echo": "/next-ssr-echo"
           }
