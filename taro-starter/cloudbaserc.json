@@ -17,17 +17,13 @@
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
           "functionRootPath": "cloudfunctions",
-          "functions": [
-            {
-              "name": "taro-stater-app",
-              "config": {
-                "timeout": 5,
-                "envVariables": {},
-                "runtime": "Nodejs10.15",
-                "memorySize": 128
-              }
-            }
-          ]
+          "functions": [{
+            "name": "taro-stater-app",
+            "timeout": 5,
+            "envVariables": {},
+            "runtime": "Nodejs10.15",
+            "memory": 128
+          }]
         }
       }
     }
