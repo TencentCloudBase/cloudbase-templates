@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "envId": "{{envId}}",
+  "framework": {
+    "name": "go-starter",
+    "plugins": {
+      "function": {
+        "use": "@cloudbase/framework-plugin-function",
+        "inputs": {
+          "functionRootPath": "functions",
+          "functions": [
+            {
+              "name": "go-stater",
+              "runtime": "Go1",
+              "handler": "main",
+              "functionDistPath": "go-starter/main"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
