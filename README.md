@@ -10,20 +10,6 @@ Github 开源地址：[https://github.com/TencentCloudBase/cloudbase-framework](
 
 欢迎给 CloudBase Framework 一个 🌟 star 
 
-## CloudBase Framework 核心贡献者计划
-
-欢迎大家参与 CloudBase Framework 的开发工作，成为我们的贡献者，我们将会在云开发社区展示贡献者的作品和信息，同时也会有惊喜奖励。
-
-您可以选择如下的贡献方式：
-
-- 贡献技术文章：[https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts](https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts)
-- 贡献应用模板：[https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md](https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md)
-- 贡献代码，提交 Pull Request
-- 反馈 bug，提交 Issue
-- 在技术会议上发表技术演讲
-
-CloudBase Framework 的发展离不开社区的积极贡献，这是我们的核心贡献者列表，再次感谢大家的贡献：[https://github.com/TencentCloudBase/cloudbase-framework#contributors-](https://github.com/TencentCloudBase/cloudbase-framework#contributors-)
-
 ## <a name="templates"></a>应用模板示例
 
 欢迎大家贡献应用模板：[https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md](https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md)
@@ -51,3 +37,18 @@ CloudBase Framework 的发展离不开社区的积极贡献，这是我们的核
 | <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/deno"><img width="200" style="max-width:none;" src="https://main.qcloudimg.com/raw/408157ecaba08c2594dc953b4c690aec.jpg"></a>                                         | deno 云应用                   | deno + Serverless 云应用部署                   | `cloudbase init --template deno`            |
 | <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/next-ssr"><img width="200" style="max-width:none;" src="https://main.qcloudimg.com/raw/918830a5ad3321fd0524eaef4c0e4c1e.png"></a>                                     | Next SSR 应用                 | Next SSR + 服务端部署 + 静态网站部署           | `cloudbase init --template next-ssr`        |
 | <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/go-starter"><img width="200" style="max-width:none;" src="https://main.qcloudimg.com/raw/10dd8964ac25c3f40dc229a00664d914.jpg"></a>                                   | Go 云函数                     | Go + 云函数                                    | `cloudbase init --template go-starter`      |
+  
+## CloudBase Framework 核心贡献者计划
+
+欢迎大家参与 CloudBase Framework 的开发工作，成为我们的贡献者，我们将会在云开发社区展示贡献者的作品和信息，同时也会有惊喜奖励。
+
+您可以选择如下的贡献方式：
+
+- 贡献技术文章：[https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts](https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts)
+- 贡献应用模板：[https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md](https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md)
+- 贡献代码，提交 Pull Request
+- 反馈 bug，提交 Issue
+- 在技术会议上发表技术演讲
+
+CloudBase Framework 的发展离不开社区的积极贡献，这是我们的核心贡献者列表，再次感谢大家的贡献：[https://github.com/TencentCloudBase/cloudbase-framework#contributors-](https://github.com/TencentCloudBase/cloudbase-framework#contributors-)
+
