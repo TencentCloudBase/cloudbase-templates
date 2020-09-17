@@ -1,5 +1,6 @@
 {
   "envId": "{{envId}}",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "functionRoot": "cloudfunctions",
   "framework": {
     "name": "vue",
@@ -16,17 +17,13 @@
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
           "functionRootPath": "cloudfunctions",
-          "functions": [
-            {
-              "name": "vue-echo",
-              "config": {
-                "timeout": 5,
-                "envVariables": {},
-                "runtime": "Nodejs10.15",
-                "memorySize": 128
-              }
-            }
-          ]
+          "functions": [{
+            "name": "vue-echo",
+            "timeout": 5,
+            "envVariables": {},
+            "runtime": "Nodejs10.15",
+            "memory": 128
+          }]
         }
       }
     }

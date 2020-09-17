@@ -76,7 +76,15 @@ function LoginFail() {
       <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter">
         https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter
       </a>
-      <h2>开发部署工具</h2>
+      <h2>
+        开发部署工具: CloudBase Framework
+        <a href="https://github.com/TencentCloudBase/cloudbase-framework">
+          <img
+            alt="CloudBase Framework"
+            src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"
+          />
+        </a>
+      </h2>
       <a
         href="https://github.com/TencentCloudBase/cloudbase-framework"
         title="CloudBase Framework: 云开发前后端一体化部署工具"
