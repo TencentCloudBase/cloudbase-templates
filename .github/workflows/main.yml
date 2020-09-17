@@ -22,5 +22,5 @@ jobs:
           npm install
           node index.js
         env:
-          - SecretId: ${{ secrets.SecretId }}
-          - SecretKey: ${{ secrets.SecretKey }}
+          SecretId: ${{ secrets.SecretId }}
+          SecretKey: ${{ secrets.SecretKey }}
