@@ -20,12 +20,31 @@
   </section>
   <section class="content"></section>
     <h3 class="caption">示例:</h3>
-    <ul class="list">
-      <li><a href="info">/info</a> 读取远程文件</li>
-      <li><a href="error">/error</a> 报错信息包装呈现</li>
-      <li><a href="api/info">/api/info</a> 普通 json 接口</li>
-      <li><a href="api/error">/api/error</a> 接口报错封装</li>
-    </ul>
+    <ul class="list" id="demo-list"></ul>
+    <script>
+      (function() {
+        var list = [{
+          path: 'info',
+          text: '读取远程文件',
+        }, {
+          path: 'error',
+          text: '报错信息包装呈现',
+        }, {
+          path: 'api/info',
+          text: '普通 json 接口',
+        }, {
+          path: 'api/error',
+          text: '接口报错封装',
+        }];
+        var arr = [];
+        list.forEach(function (item) {
+          var itemPath = location.pathname + item.path;
+          var itemHtml = '<li><a href="' + itemPath + '">' + itemPath + '</a> ' + item.text + '</li>';
+          arr.push(itemHtml);
+        });
+        document.getElementById('demo-list').innerHTML = arr.join('');
+      })();
+    </script>
   </section>
 </div>
 <%- await include(`${Deno.cwd()}/views/common/footer.ejs`) %>
