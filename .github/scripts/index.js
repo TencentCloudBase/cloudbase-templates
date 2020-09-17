@@ -3,13 +3,13 @@ const path = require("path");
 const archiver = require("archiver");
 const CloudBase = require("@cloudbase/manager-node");
 
-const rootPath = path.join(__dirname, "..");
+const rootPath = path.join(__dirname, "../..");
 
 // 打包文件
 async function packZipFiles() {
   // 读取需要上传的文件
   const files = fs
-    .readdirSync(path.join(__dirname, ".."))
+    .readdirSync(rootPath)
     .filter(
       (item) =>
         !item.match(/^\./) &&
