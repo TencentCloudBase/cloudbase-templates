@@ -1,6 +1,6 @@
 # CloudBase Templates
 
-云开发模板集合，可以通过 CLI 工具 `tcb init` 命令使用。
+云开发应用模板仓库，可通过 [CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework) 一键创建和部署
 
 ## CloudBase Framework 介绍
 
