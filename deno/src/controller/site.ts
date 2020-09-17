@@ -3,8 +3,10 @@ import { Context } from "../types.d.ts";
 
 export const site = {
   async home(ctx: Context) {
+    const req = ctx.request;
     ctx.response.body = await renderFile(`${Deno.cwd()}/views/home.ejs`, {
       title: "home",
+      pathname: req.url.pathname,
     });
   },
   async info(ctx: Context) {
