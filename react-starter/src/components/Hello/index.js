@@ -3,7 +3,7 @@ import { getApp } from "../../tcb";
 import "./index.css";
 
 function LoginFail() {
-  const envId = "";
+  const envId = process.env.REACT_APP_ENV_ID;
 
   return (
     <>
