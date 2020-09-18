@@ -8,7 +8,6 @@ function LoginFail() {
   return (
     <>
       <h2>为了演示云开发功能，需要开启匿名登录</h2>
-      <p>设置 src/tcb.js 中的环境 Id 变量：envId 为你的环境 Id</p>
       <p>
         登录腾讯云 Cloudbase
         <a
