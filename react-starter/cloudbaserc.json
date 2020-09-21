@@ -10,20 +10,25 @@
         "inputs": {
           "buildCommand": "npm run build",
           "outputPath": "build",
-          "cloudPath": "/react-starter"
+          "cloudPath": "/react-starter",
+          "envVariables": {
+            "REACT_APP_ENV_ID": "{{env.ENV_ID}}"
+          }
         }
       },
       "server": {
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
           "functionRootPath": "cloudfunctions",
-          "functions": [{
-            "name": "stater-app",
-            "timeout": 5,
-            "envVariables": {},
-            "runtime": "Nodejs10.15",
-            "memory": 128
-          }]
+          "functions": [
+            {
+              "name": "stater-app",
+              "timeout": 5,
+              "envVariables": {},
+              "runtime": "Nodejs10.15",
+              "memory": 128
+            }
+          ]
         }
       }
     }
