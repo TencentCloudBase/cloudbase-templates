@@ -6,7 +6,11 @@
 
 ## 线上演示地址
 
-[https://fe-env-9gpgw64vbbef5b5f-1252847684.tcloudbaseapp.com/omi-starter/](https://fe-env-9gpgw64vbbef5b5f-1252847684.tcloudbaseapp.com/omi-starter/)
+[https://framework.service.tcloudbase.com/omi-starter/](https://framework.service.tcloudbase.com/omi-starter/)
+
+点击下方按钮使用 [CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework) 可以在云端一键部署本项目到自己的云开发账号上。
+
+[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2FTencentCloudBase%2Fcloudbase-templates&workDir=omi-starter&appName=omi-starter)
 
 ## 部署一个 Omi 应用
 
