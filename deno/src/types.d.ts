@@ -1,4 +1,4 @@
-import { Context as OakContext } from "https://deno.land/x/oak@v6.0.1/mod.ts";
+import { Context as OakContext } from "./deps.ts";
 import { Logger } from "./service/logger.ts";
 
 export interface Context extends OakContext {

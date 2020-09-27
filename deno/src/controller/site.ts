@@ -1,15 +1,14 @@
-import { renderFile } from "https://deno.land/x/dejs@0.8.0/mod.ts";
-import { Context } from "../types.d.ts";
+import { renderFile, State } from "../deps.ts";
 
 export const site = {
-  async home(ctx: Context) {
+  async home(ctx: State) {
     const req = ctx.request;
     ctx.response.body = await renderFile(`${Deno.cwd()}/views/home.ejs`, {
       title: "home",
-      pathname: req.url.pathname,
+      pathname: req?.url?.pathname || '/',
     });
   },
-  async info(ctx: Context) {
+  async info(ctx: State) {
     let mdContent = "";
     if (ctx.curl) {
       mdContent = await ctx.curl({
