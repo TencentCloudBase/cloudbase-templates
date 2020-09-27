@@ -1,4 +1,4 @@
-import { send } from "https://deno.land/x/oak@v6.0.1/mod.ts";
+import { send } from "../deps.ts";
 import { Context } from "../types.d.ts";
 
 export async function statics(ctx: Context) {

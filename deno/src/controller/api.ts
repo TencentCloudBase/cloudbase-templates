@@ -1,7 +1,7 @@
-import { Context } from "../types.d.ts";
+import { State } from "../deps.ts";
 
 export const api = {
-  info(ctx: Context) {
+  info(ctx: State) {
     ctx.response.body = {
       code: 0,
       msg: "ok",

@@ -1,4 +1,4 @@
-import { renderFile } from "https://deno.land/x/dejs@0.8.0/mod.ts";
+import { renderFile } from "../deps.ts";
 import { Context } from "../types.d.ts";
 
 export async function error(ctx: Context, next: Function) {
