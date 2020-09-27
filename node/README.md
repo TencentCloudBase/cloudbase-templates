@@ -1,14 +1,18 @@
 <a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/82da2591cd2aed610d7f91f9dd881930.png"></a>
 
-# Node 云应用示例
+# Node 云托管示例
 
-这个目录是基于云开发的一个 Node.js 的 [Koa](https://koa.bootcss.com/) 云应用示例，包含 Koa + 云应用，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发的 Serverless 云应用环境
+这个目录是基于云开发的一个 Node.js 的 [Koa](https://koa.bootcss.com/) 云托管示例，包含 Koa + 云托管，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发的 云托管环境
 
 ## 线上演示地址
 
 [https://framework.service.tcloudbase.com/node-capp/](https://framework.service.tcloudbase.com/node-capp/)
 
-## 部署一个 Node 云应用
+点击下方按钮使用 [CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework) 可以在云端一键部署本项目到自己的云开发账号上。
+
+[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2FTencentCloudBase%2Fcloudbase-templates&workDir=node&appName=node)
+
+## 部署一个 Node 云托管应用
 
 ### 步骤一. 准备工作
 

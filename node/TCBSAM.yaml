@@ -1,35 +1,35 @@
-TCBSAMFormatVersion: '2019-12-24'
+TCBSAMFormatVersion: "2019-12-24"
 License: MIT
 Description: 基于 CloudBase Framework 构建
 Category: CloudApp
 Tags:
   - CloudBase
 EnvType: PostPay
-SourceUrl: 'https://github.com/TencentCloudBase/cloudbase-framework'
-ReleaseNotesUrl: 'https://github.com/TencentCloudBase/cloudbase-framework/releases'
+SourceUrl: "https://github.com/TencentCloudBase/cloudbase-framework"
+ReleaseNotesUrl: "https://github.com/TencentCloudBase/cloudbase-framework/releases"
 IconUrl: >-
   https://main.qcloudimg.com/raw/f87b49914efe502722f9aa128f5d8865/hello_world.svg
-IntroUrl: 'https://cloud.tencent.com/document/product/876/44547'
+IntroUrl: "https://cloud.tencent.com/document/product/876/44547"
 ChangeLog:
   - Title: 1.0.0
     Content: []
 Author:
   AuthorName: Tencent CloudBase
   Email: cloudbase@tencent.com
-  Url: 'https://github.com/TencentCloudBase/cloudbase-framework'
+  Url: "https://github.com/TencentCloudBase/cloudbase-framework"
 Contributors:
   - AuthorName: Tencent CloudBase
     Email: cloudbase@tencent.com
-    Url: 'https://github.com/TencentCloudBase/cloudbase-framework'
+    Url: "https://github.com/TencentCloudBase/cloudbase-framework"
 Name: fx-node-capp-1258016615
 Version: 1.0.0
 DisplayName: fx-node-capp-1258016615
 Resources:
   NodeCapp:
-    Type: 'CloudBase::CloudBaseRun'
+    Type: "CloudBase::CloudBaseRun"
     Properties:
       ServerName: node-capp
-      Description: 基于云开发 CloudBase Framework 部署的云应用
+      Description: 基于云开发 CloudBase Framework 部署的云托管
       isPublic: true
       UploadType: package
       FlowRatio: 100

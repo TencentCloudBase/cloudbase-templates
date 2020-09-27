@@ -1,14 +1,18 @@
 <a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/2d1c438165480b9a7937e3b81c4873e3.jpg"></a>
 
-# Aqueduct 云应用示例
+# Aqueduct 云托管示例
 
-这个目录是基于云开发的一个 [Aqueduct](https://aqueduct.io/) (Dart Server) 云应用示例，包含 Aqueduct 模板，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Aqueduct](https://aqueduct.io/) (Dart Server) 云托管示例，包含 Aqueduct 模板，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 线上演示地址
 
 [https://framework.service.tcloudbase.com/dartapp/](https://framework.service.tcloudbase.com/dartapp/)
 
-## 部署一个 Aqueduct 云应用
+点击下方按钮使用 [CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework) 可以在云端一键部署本项目到自己的云开发账号上。
+
+[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2FTencentCloudBase%2Fcloudbase-templates&workDir=dart&appName=dart)
+
+## 部署一个 Aqueduct 云托管应用
 
 ### 步骤一. 准备工作
 
@@ -68,12 +72,12 @@ pub run test
 /// 初始化云数据库
 database = CloudBaseDatabase(CloudBaseCore.init({
   /// 云开发环境 ID
-  'env': 'your-env-id',         
+  'env': 'your-env-id',
   /// 腾讯云 API 固定密钥对
   /// 获取路径: https://console.cloud.tencent.com/cam/capi
   'secretId': 'your-secretId',
   /// 同上
-  'secretKey': 'your-secretKey' 
+  'secretKey': 'your-secretKey'
 }));
 ```
 
