@@ -1,5 +1,5 @@
-import { Context } from "https://deno.land/x/oak@v6.0.1/mod.ts";
-import * as Colors from "https://deno.land/std@0.65.0/fmt/colors.ts";
+import { Context } from "../deps.ts";
+import { Colors } from "../deps.ts";
 import { formatTime } from "../util/time.ts";
 
 export class Logger {
