@@ -5,6 +5,8 @@ scripts:
     watch: false
   start:
     cmd: deno run dist/entry.js
+    env:
+      PATHNAME: "/deno-app"
     allow:
       - net
       - env
