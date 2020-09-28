@@ -2,10 +2,10 @@ import { renderFile, State } from "../deps.ts";
 
 export const site = {
   async home(ctx: State) {
-    const req = ctx.request;
+    const pathname = Deno.env.get("PATHNAME") || '';
     ctx.response.body = await renderFile(`${Deno.cwd()}/views/home.ejs`, {
       title: "home",
-      pathname: req?.url?.pathname || '/',
+      pathname,
     });
   },
   async info(ctx: State) {
@@ -16,8 +16,10 @@ export const site = {
         dataType: "text",
       });
     }
+    const pathname = Deno.env.get("PATHNAME") || '';
     ctx.response.body = await renderFile(`${Deno.cwd()}/views/info.ejs`, {
       title: "info",
+      pathname,
       mdContent,
     });
   },

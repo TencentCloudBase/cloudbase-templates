@@ -19286,10 +19286,10 @@ System.register("file:///Users/tony/work/github/cloudbase-templates/deno/src/con
         execute: function () {
             exports_88("site", site = {
                 async home(ctx) {
-                    const req = ctx.request;
+                    const pathname = Deno.env.get("PATHNAME") || '';
                     ctx.response.body = await deps_ts_17.renderFile(`${Deno.cwd()}/views/home.ejs`, {
                         title: "home",
-                        pathname: req?.url?.pathname || '/',
+                        pathname,
                     });
                 },
                 async info(ctx) {
@@ -19300,8 +19300,10 @@ System.register("file:///Users/tony/work/github/cloudbase-templates/deno/src/con
                             dataType: "text",
                         });
                     }
+                    const pathname = Deno.env.get("PATHNAME") || '';
                     ctx.response.body = await deps_ts_17.renderFile(`${Deno.cwd()}/views/info.ejs`, {
                         title: "info",
+                        pathname,
                         mdContent,
                     });
                 },
