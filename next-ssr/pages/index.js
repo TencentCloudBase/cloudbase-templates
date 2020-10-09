@@ -33,7 +33,7 @@ export default function Home() {
             云开发 CloudBase 文档
           </a>
           <a
-            href="https://github.com/TencentCloudBase/cloudbase-framework"
+            href="https://gitee.com/TencentCloudBase/cloudbase-framework"
             target="_blank"
             className={styles["button--grey"]}
           >
@@ -64,7 +64,7 @@ export default function Home() {
         </a>
         <h2>
           开发部署工具: CloudBase Framework
-          <a href="https://github.com/TencentCloudBase/cloudbase-framework">
+          <a href="https://gitee.com/TencentCloudBase/cloudbase-framework">
             <img
               alt="CloudBase Framework"
               src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"
@@ -72,7 +72,7 @@ export default function Home() {
           </a>
         </h2>
         <a
-          href="https://github.com/TencentCloudBase/cloudbase-framework"
+          href="https://gitee.com/TencentCloudBase/cloudbase-framework"
           title="CloudBase Framework: 云开发前后端一体化部署工具"
         >
           <img

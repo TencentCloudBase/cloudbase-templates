@@ -2,7 +2,7 @@
 
 # Nest 应用示例
 
-这个目录是基于云开发的一个 [Nest](https://nestjs.com/) 应用示例，包含 Nest + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Nest](https://nestjs.com/) 应用示例，包含 Nest + 云函数，可以基于 **[CloudBase Framework](https://gitee.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 部署一个 Nest 应用
 
@@ -48,7 +48,7 @@ npm run lint
 
 ### CloudBase Framework 相关开发配置
 
-查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
+查看 [CloudBase Framework 配置](https://gitee.com/TencentCloudBase/cloudbase-framework).
 
 ### Nest 开发文档
 

@@ -2,9 +2,9 @@
 
 # PHP 应用示例
 
-这个目录是基于云开发的一个 [PHP](https://www.php.net/manual/zh/index.php) 应用示例，包含 PHP + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [PHP](https://www.php.net/manual/zh/index.php) 应用示例，包含 PHP + 云函数，可以基于 **[CloudBase Framework](https://gitee.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
-点击下方按钮使用 [CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework) 可以在云端一键部署本项目到自己的云开发账号上。
+点击下方按钮使用 [CloudBase Framework](https://gitee.com/TencentCloudBase/cloudbase-framework) 可以在云端一键部署本项目到自己的云开发账号上。
 
 [![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&tdl_anchor=gitee&tdl_site=0&appUrl=https%3A%2F%2Fgitee.com%2FTencentCloudBase%2Fcloudbase-templates&workDir=php-starter&appName=php-starter)
 
@@ -52,7 +52,7 @@ npm run lint
 
 ### CloudBase Framework 相关开发配置
 
-查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
+查看 [CloudBase Framework 配置](https://gitee.com/TencentCloudBase/cloudbase-framework).
 
 ### PHP 开发文档
 

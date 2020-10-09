@@ -1,12 +1,12 @@
 # CloudBase Templates
 
-云开发应用模板仓库，可通过 [CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework) 一键创建和部署
+云开发应用模板仓库，可通过 [CloudBase Framework](https://gitee.com/TencentCloudBase/cloudbase-framework) 一键创建和部署
 
 ## CloudBase Framework 介绍
 
 🚀 CloudBase Framework 是云开发开源的云原生前后端一体化部署工具，支持主流前后端框架，前后端一键托管部署在云端一体化平台，支持支持小程序、Web、Flutter、后端服务等多个平台。
 
-Github 开源地址：[https://github.com/TencentCloudBase/cloudbase-framework](https://github.com/TencentCloudBase/cloudbase-framework)
+Github 开源地址：[https://gitee.com/TencentCloudBase/cloudbase-framework](https://gitee.com/TencentCloudBase/cloudbase-framework)
 
 欢迎给 CloudBase Framework 一个 🌟 star
 
@@ -49,4 +49,4 @@ Github 开源地址：[https://github.com/TencentCloudBase/cloudbase-framework](
 - 反馈 bug，提交 Issue
 - 在技术会议上发表技术演讲
 
-CloudBase Framework 的发展离不开社区的积极贡献，这是我们的核心贡献者列表，再次感谢大家的贡献：[https://github.com/TencentCloudBase/cloudbase-framework#contributors-](https://github.com/TencentCloudBase/cloudbase-framework#contributors-)
+CloudBase Framework 的发展离不开社区的积极贡献，这是我们的核心贡献者列表，再次感谢大家的贡献：[https://gitee.com/TencentCloudBase/cloudbase-framework#contributors-](https://gitee.com/TencentCloudBase/cloudbase-framework#contributors-)

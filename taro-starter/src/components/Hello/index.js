@@ -22,7 +22,7 @@ const LoginFail = () => {
       </a>
       <View className="title">
         开发部署工具: CloudBase Framework
-        <a href="https://github.com/TencentCloudBase/cloudbase-framework">
+        <a href="https://gitee.com/TencentCloudBase/cloudbase-framework">
           <img
             alt="CloudBase Framework"
             src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"

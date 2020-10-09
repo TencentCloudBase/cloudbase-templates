@@ -2,13 +2,13 @@
 
 # Taro 多端全栈应用示例
 
-这个目录是基于云开发的一个 [Taro](https://taro-docs.jd.com/) 全栈应用示例，包含 Taro + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
+这个目录是基于云开发的一个 [Taro](https://taro-docs.jd.com/) 全栈应用示例，包含 Taro + 云函数 + 静态网站部署，可以基于 **[CloudBase Framework](https://gitee.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
 
 ## 线上演示地址
 
 [https://static-176d4a.tcloudbaseapp.com/taro-starter](https://static-176d4a.tcloudbaseapp.com/taro-starter)
 
-点击下方按钮使用 [CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework) 可以在云端一键部署本项目到自己的云开发账号上。
+点击下方按钮使用 [CloudBase Framework](https://gitee.com/TencentCloudBase/cloudbase-framework) 可以在云端一键部署本项目到自己的云开发账号上。
 
 [![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&tdl_anchor=gitee&tdl_site=0&appUrl=https%3A%2F%2Fgitee.com%2FTencentCloudBase%2Fcloudbase-templates&workDir=taro-starter&appName=taro-starter)
 
@@ -88,7 +88,7 @@ npm run lint
 
 ### CloudBase Framework 相关开发配置
 
-查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
+查看 [CloudBase Framework 配置](https://gitee.com/TencentCloudBase/cloudbase-framework).
 
 ### Taro 相关开发配置
 
