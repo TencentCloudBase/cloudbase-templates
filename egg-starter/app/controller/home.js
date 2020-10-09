@@ -15,8 +15,8 @@ class HomeController extends Controller {
     <h1>Tencent CloudBase + Egg.js</h1>
     <p>Welcome to Tencent CloudBase + Egg.js</p>
     <h2>本示例 Github 源码地址</h2>
-    <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/egg-starter"
-      >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/egg-starter</a
+    <a href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/egg-starter"
+      >https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/egg-starter</a
     >
     <h2>开发部署工具: CloudBase Framework<a href="https://github.com/TencentCloudBase/cloudbase-framework"><img alt="CloudBase Framework"src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"/></a></h2>
     <a

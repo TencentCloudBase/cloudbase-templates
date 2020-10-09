@@ -3,17 +3,29 @@
     <div>
       <logo />
       <h1 class="title">[ CloudBase + Nuxt ] Fullstack APP</h1>
-      <h2 class="subtitle">云开发 CloudBase + Nuxt SPA 全栈应用，包含前端网站 + 云开发函数</h2>
+      <h2 class="subtitle">
+        云开发 CloudBase + Nuxt SPA 全栈应用，包含前端网站 + 云开发函数
+      </h2>
       <div class="links">
-        <a href="https://cloudbase.net/" target="_blank" class="button--green">云开发 CloudBase 文档</a>
+        <a href="https://cloudbase.net/" target="_blank" class="button--green"
+          >云开发 CloudBase 文档</a
+        >
         <a
           href="https://docs.cloudbase.net/cloudbase-vue/introduce.html"
           target="_blank"
           rel="noopener"
           class="button--green"
-        >云开发 Vue 插件</a>
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Nuxt 文档</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+          >云开发 Vue 插件</a
+        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
+          >Nuxt 文档</a
+        >
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          class="button--grey"
+          >GitHub</a
+        >
       </div>
 
       <template v-if="isLoginSuccss">
@@ -25,7 +37,9 @@
         <h2>调用云函数</h2>
         <p>
           点击
-          <a href="javascript:;" @click="callFunction">调用 nuxt-spa-echo 云函数</a>
+          <a href="javascript:;" @click="callFunction"
+            >调用 nuxt-spa-echo 云函数</a
+          >
         </p>
         <p>
           <b>云函数执行结果</b>
@@ -41,15 +55,15 @@
             target="_blank"
             rel="noopener noreferrer"
             class="links"
-          >控制台</a>，在
+            >控制台</a
+          >，在
           <a
-            v-bind:href="
-              `https://console.cloud.tencent.com/tcb/env/setting?tab=loginConfig&envId=${envId}`
-            "
+            v-bind:href="`https://console.cloud.tencent.com/tcb/env/setting?tab=loginConfig&envId=${envId}`"
             class="links"
             target="_blank"
             rel="noopener noreferrer"
-          >环境-&gt;环境设置-&gt;登录方式</a>
+            >环境-&gt;环境设置-&gt;登录方式</a
+          >
           中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
         </p>
         <p>
@@ -61,13 +75,12 @@
       </template>
       <h2>本示例 Github 源码地址：</h2>
       <a
-        href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/nuxt-spa"
-      >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/nuxt-spa</a>
+        href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/nuxt-spa"
+        >https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/nuxt-spa</a
+      >
       <h2>
         开发部署工具: CloudBase Framework
-        <a
-          href="https://github.com/TencentCloudBase/cloudbase-framework"
-        >
+        <a href="https://github.com/TencentCloudBase/cloudbase-framework">
           <img
             alt="CloudBase Framework"
             src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"
@@ -78,7 +91,10 @@
         href="https://github.com/TencentCloudBase/cloudbase-framework"
         title="CloudBase Framework: 云开发前后端一体化部署工具"
       >
-        <img width="420" src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png" />
+        <img
+          width="420"
+          src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
+        />
       </a>
     </div>
   </div>

@@ -22,7 +22,7 @@ define('app-intro', class extends WeElement {
         <p class="app-intro">
           <p>{props.msg}</p>
           <h2>本示例 Github 源码地址</h2>
-          <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/omi-starter">
+          <a href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/omi-starter">
             omi-starter
           </a>
           <h2>

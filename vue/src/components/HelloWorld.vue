@@ -7,7 +7,8 @@
         href="https://docs.cloudbase.net/cloudbase-vue/introduce.html"
         target="_blank"
         rel="noopener"
-      >云开发 Vue 插件</a>
+        >云开发 Vue 插件</a
+      >
       文档
     </p>
 
@@ -32,9 +33,7 @@
       <p>
         在
         <a
-          v-bind:href="
-            `https://console.cloud.tencent.com/tcb/env/login?envId=${envId}`
-          "
+          v-bind:href="`https://console.cloud.tencent.com/tcb/env/login?envId=${envId}`"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -57,17 +56,21 @@
               fill="currentColor"
               points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
             />
-          </svg>
-        </a>中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
+          </svg> </a
+        >中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
       </p>
       <p>
-        <img src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png" alt="开启匿名登录" />
+        <img
+          src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png"
+          alt="开启匿名登录"
+        />
       </p>
     </template>
     <h2>本示例 Github 源码地址：</h2>
     <a
-      href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue"
-    >https://github.com/TencentCloudBase/cloudbase-templates/tree/master/vue</a>
+      href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/vue"
+      >https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/vue</a
+    >
     <h2>
       开发部署工具: CloudBase Framework
       <a href="https://github.com/TencentCloudBase/cloudbase-framework">
@@ -81,7 +84,10 @@
       href="https://github.com/TencentCloudBase/cloudbase-framework"
       title="CloudBase Framework: 云开发前后端一体化部署工具"
     >
-      <img width="420" src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png" />
+      <img
+        width="420"
+        src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
+      />
     </a>
   </div>
 </template>

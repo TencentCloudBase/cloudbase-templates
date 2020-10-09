@@ -46,7 +46,7 @@ class AppChannel extends ApplicationChannel {
 
     router.route("/").linkFunction((request) async {
       final content =
-          '<h1>Hello Tencent CloudBase + Dart <h1> <h2>本示例 Github 源码地址</h2><a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/dart">https://github.com/TencentCloudBase/cloudbase-templates/tree/master/dart</a><h2>开发部署工具: CloudBase Framework<a href="https://github.com/TencentCloudBase/cloudbase-framework"><img alt="CloudBase Framework"src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"/></a></h2><a href="https://github.com/TencentCloudBase/cloudbase-framework" title="CloudBase Framework: 云开发前后端一体化部署工具"><img width="420" src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"></a>';
+          '<h1>Hello Tencent CloudBase + Dart <h1> <h2>本示例 Github 源码地址</h2><a href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/dart">https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/dart</a><h2>开发部署工具: CloudBase Framework<a href="https://github.com/TencentCloudBase/cloudbase-framework"><img alt="CloudBase Framework"src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"/></a></h2><a href="https://github.com/TencentCloudBase/cloudbase-framework" title="CloudBase Framework: 云开发前后端一体化部署工具"><img width="420" src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"></a>';
       final headers = {'content-type': 'text/html; charset=utf-8'};
 
       return Response.ok(content, headers: headers);

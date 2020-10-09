@@ -58,9 +58,9 @@ export default function Home() {
         <h2>本示例 Github 源码地址：</h2>
         <a
           className={styles.githubLink}
-          href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/next-ssr"
+          href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/next-ssr"
         >
-          https://github.com/TencentCloudBase/cloudbase-templates/tree/master/next-ssr
+          https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/next-ssr
         </a>
         <h2>
           开发部署工具: CloudBase Framework

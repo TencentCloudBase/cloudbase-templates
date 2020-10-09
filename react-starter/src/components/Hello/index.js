@@ -72,8 +72,8 @@ function LoginFail() {
         />
       </p>
       <h2>本示例 Github 源码地址</h2>
-      <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter">
-        https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter
+      <a href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/express-starter">
+        https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/express-starter
       </a>
       <h2>
         开发部署工具: CloudBase Framework

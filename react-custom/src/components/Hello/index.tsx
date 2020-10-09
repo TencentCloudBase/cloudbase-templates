@@ -69,8 +69,8 @@ function LoginFail() {
         />
       </p>
       <h2>本示例 Github 源码地址</h2>
-      <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/react-custom">
-        https://github.com/TencentCloudBase/cloudbase-templates/tree/master/react-custom
+      <a href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/react-custom">
+        https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/react-custom
       </a>
       <h2>
         开发部署工具: CloudBase Framework

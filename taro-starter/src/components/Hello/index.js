@@ -17,8 +17,8 @@ const LoginFail = () => {
         src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png"
       />
       <View className="title">本示例 Github 源码地址</View>
-      <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter">
-        https://github.com/TencentCloudBase/cloudbase-templates/tree/master/express-starter
+      <a href="https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/express-starter">
+        https://gitee.com/TencentCloudBase/cloudbase-templates/tree/gitee/express-starter
       </a>
       <View className="title">
         开发部署工具: CloudBase Framework
