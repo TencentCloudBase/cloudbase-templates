@@ -1,4 +1,4 @@
-import { Application } from "https://deno.land/x/oak@v6.0.1/mod.ts";
+import { Application } from "./deps.ts";
 import { setRoutes } from "./route/mod.ts";
 import {
   logger as midLogger,

@@ -1,5 +1,6 @@
 <%- await include(`${Deno.cwd()}/views/common/header.ejs`, {
-  title
+  pathname,
+  title,
 }) %>
 <div class="wrapper">
   <h1 class="title">Hello Tencent CloudBase + Deno + Oak !</h1>
@@ -20,31 +21,12 @@
   </section>
   <section class="content"></section>
     <h3 class="caption">示例:</h3>
-    <ul class="list" id="demo-list"></ul>
-    <script>
-      (function() {
-        var list = [{
-          path: 'info',
-          text: '读取远程文件',
-        }, {
-          path: 'error',
-          text: '报错信息包装呈现',
-        }, {
-          path: 'api/info',
-          text: '普通 json 接口',
-        }, {
-          path: 'api/error',
-          text: '接口报错封装',
-        }];
-        var arr = [];
-        list.forEach(function (item) {
-          var itemPath = location.pathname + item.path;
-          var itemHtml = '<li><a href="' + itemPath + '">' + itemPath + '</a> ' + item.text + '</li>';
-          arr.push(itemHtml);
-        });
-        document.getElementById('demo-list').innerHTML = arr.join('');
-      })();
-    </script>
+    <ul class="list" id="demo-list">
+      <li><a href="<%= pathname %>/info"><%= pathname %>/info</a> 读取远程文件</li>
+      <li><a href="<%= pathname %>/error"><%= pathname %>/error</a> 报错信息包装呈现</li>
+      <li><a href="<%= pathname %>/api/info"><%= pathname %>/api/info</a> 普通 json 接口</li>
+      <li><a href="<%= pathname %>/api/error"><%= pathname %>/api/error</a> 接口报错封装</li>
+    </ul>
   </section>
 </div>
 <%- await include(`${Deno.cwd()}/views/common/footer.ejs`) %>

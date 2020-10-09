@@ -1,5 +1,6 @@
 <%- await include(`${Deno.cwd()}/views/common/header.ejs`, {
-  title
+  pathname,
+  title,
 }) %>
 <div class="wrapper">
   <h1 class="title">Page: <%= title %></h1>
