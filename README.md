@@ -43,7 +43,7 @@ Github 开源地址：[https://github.com/TencentCloudBase/cloudbase-framework](
 
 您可以选择如下的贡献方式：
 
-- 贡献技术文章：[https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts](https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts)
+- 贡献技术文章：[https://gitee.com/TencentCloudBase/cloudbase-framework/tree/gitee/community/posts](https://gitee.com/TencentCloudBase/cloudbase-framework/tree/gitee/community/posts)
 - 贡献应用模板：[https://gitee.com/TencentCloudBase/cloudbase-framework/blob/gitee/doc/app.md](https://gitee.com/TencentCloudBase/cloudbase-framework/blob/gitee/doc/app.md)
 - 贡献代码，提交 Pull Request
 - 反馈 bug，提交 Issue
