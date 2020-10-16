@@ -10,6 +10,7 @@
           "name": "nest-starter",
           "path": "/nest-starter",
           "entry": "app.js",
+          "buildCommand": "npm install --prefer-offline --no-audit --progress=false && npm run build",
           "functionOptions": {
             "timeout": 5,
             "envVariables": {
