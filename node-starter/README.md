@@ -25,7 +25,7 @@ cloudbase init --template node-starter
 进入到项目目录，在命令行执行
 
 ```
-cloudbase framework:deploy
+cloudbase framework deploy
 ```
 
 ## 开发命令及配置

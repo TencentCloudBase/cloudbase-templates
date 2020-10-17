@@ -47,7 +47,7 @@ cloudbase init --template uni-app-starter
 进入到项目目录，在命令行执行
 
 ```bash
-cloudbase framework:deploy
+cloudbase framework deploy
 ```
 
 #### 小程序部署

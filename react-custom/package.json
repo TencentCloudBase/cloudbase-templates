@@ -13,7 +13,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "deploy": "cloudbase framework:deploy"
+    "deploy": "cloudbase framework deploy"
   },
   "eslintConfig": {
     "extends": "react-app"

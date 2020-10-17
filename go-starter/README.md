@@ -31,7 +31,7 @@ cloudbase init --template go-starter
 进入到项目目录，在命令行执行
 
 ```
-cloudbase framework:deploy
+cloudbase framework deploy
 ```
 
 修改 main.go 代码之后，需要执行 `make build` 来生成二进制文件
@@ -49,7 +49,7 @@ make build
 ### 上线部署
 
 ```
-cloudbase framework:deploy
+cloudbase framework deploy
 ```
 
 ### CloudBase Framework 相关开发配置

@@ -8,9 +8,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "dev": "nuxt",
-    "deploy": "cloudbase framework:deploy",
-    "deploy:client": "cloudbase framework:deploy client",
-    "deploy:server": "cloudbase framework:deploy server",
+    "deploy": "cloudbase framework deploy",
+    "deploy:client": "cloudbase framework deploy client",
+    "deploy:server": "cloudbase framework deploy server",
     "generate": "nuxt generate",
     "test": "jest"
   },

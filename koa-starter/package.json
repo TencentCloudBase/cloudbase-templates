@@ -6,8 +6,8 @@
     "start": "node bin/www",
     "dev": "./node_modules/.bin/nodemon bin/www",
     "prd": "pm2 start bin/www",
-    "deploy": "cloudbase framework:deploy",
-    "deploy:server": "cloudbase framework:deploy node"
+    "deploy": "cloudbase framework deploy",
+    "deploy:server": "cloudbase framework deploy node"
   },
   "dependencies": {
     "debug": "^4.1.1",

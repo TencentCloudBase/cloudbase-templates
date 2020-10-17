@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "deno run entry.ts",
     "commit": "npx git-cz",
-    "deploy": "cloudbase framework:deploy"
+    "deploy": "cloudbase framework deploy"
   },
   "dependencies": {},
   "devDependencies": {
