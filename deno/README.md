@@ -31,7 +31,7 @@ cloudbase init --template deno
 进入到项目目录，在命令行执行
 
 ```bash
-cloudbase framework:deploy
+cloudbase framework deploy
 ```
 
 ## 本地开发

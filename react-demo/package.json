@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "deploy": "cloudbase framework:deploy",
+    "deploy": "cloudbase framework deploy",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
