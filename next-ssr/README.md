@@ -23,7 +23,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate next-ssr
+cloudbase init --template next-ssr
 ```
 
 ### 步骤三. 一键部署
