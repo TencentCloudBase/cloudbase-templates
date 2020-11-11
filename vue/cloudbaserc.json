@@ -11,7 +11,10 @@
         "inputs": {
           "buildCommand": "npm run build",
           "outputPath": "dist",
-          "cloudPath": "/vue"
+          "cloudPath": "/vue",
+          "envVariables": {
+            "VUE_APP_ENV_ID": "{{env.ENV_ID}}"
+          }
         }
       },
       "server": {
