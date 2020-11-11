@@ -23,11 +23,11 @@
           "functionRootPath": "cloudfunctions",
           "functions": [
             {
-              "name": "stater-app",
+              "name": "helloworld",
               "timeout": 5,
               "envVariables": {},
               "runtime": "Nodejs10.15",
-              "memory": 128
+              "memory": 256
             }
           ]
         }
