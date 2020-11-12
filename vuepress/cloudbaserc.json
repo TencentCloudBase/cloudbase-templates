@@ -1,4 +1,5 @@
 {
+  "version": "2.0",
   "envId": "{{envId}}",
   "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "functionRoot": "./functions",

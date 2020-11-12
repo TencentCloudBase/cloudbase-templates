@@ -22,16 +22,16 @@
 
 在命令行执行
 
-```
-cloudbase init --template vue
+```bash
+tcb new vue-app vue
 ```
 
 ### 步骤三. 一键部署
 
 进入到项目目录，在命令行执行
 
-```
-cloudbase framework deploy
+```bash
+tcb framework deploy
 ```
 
 ## 开发命令及配置

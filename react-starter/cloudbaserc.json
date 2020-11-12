@@ -1,4 +1,5 @@
 {
+  "version": "2.0",
   "envId": "{{envId}}",
   "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "functionRoot": "cloudfunctions",
@@ -22,11 +23,25 @@
           "functionRootPath": "cloudfunctions",
           "functions": [
             {
-              "name": "stater-app",
+              "name": "helloworld",
               "timeout": 5,
               "envVariables": {},
               "runtime": "Nodejs10.15",
-              "memory": 128
+              "memory": 256,
+              "aclRule": {
+                "invoke": true
+              }
+            }
+          ]
+        }
+      },
+      "auth": {
+        "use": "@cloudbase/framework-plugin-auth",
+        "inputs": {
+          "configs": [
+            {
+              "platform": "NONLOGIN",
+              "status": "ENABLE"
             }
           ]
         }

@@ -6,7 +6,7 @@ import config from "../cloudbaserc";
 Vue.config.productionTip = false;
 
 Vue.use(Cloudbase, {
-  env: config.envId,
+  env: process.env.VUE_APP_ENV_ID || config.envId,
 });
 
 new Vue({
