@@ -23,7 +23,7 @@
 在命令行执行
 
 ```
-cloudbase init --tempate nuxt-ssr
+cloudbase init --template nuxt-ssr
 ```
 
 ### 步骤三. 一键部署
