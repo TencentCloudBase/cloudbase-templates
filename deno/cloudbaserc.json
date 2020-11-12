@@ -6,7 +6,9 @@
     "plugins": {
       "deno": {
         "use": "@cloudbase/framework-plugin-deno",
-        "inputs": {}
+        "inputs": {
+          "dockerImage": "debian:latest"
+        }
       }
     }
   }
