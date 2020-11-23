@@ -13,7 +13,7 @@ jobs:
       - name: Making Zip Directory
         run: sh ./dir.sh
       - name: Install Node
-        uses: actions/setup-node@v1.4.3
+        uses: actions/setup-node@v1.4.4
         with:
           node-version: "12.x"
       - name: Change directory and upload files
