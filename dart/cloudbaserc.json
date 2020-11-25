@@ -10,7 +10,9 @@
         "inputs": {
           "serviceName": "dartapp",
           "servicePath": "/dartapp",
-          "localPath": "./"
+          "localPath": "./",
+          "cpu": 1,
+          "mem": 1
         }
       },
       "db": {
