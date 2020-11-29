@@ -16,7 +16,7 @@ exports.tcbGetApp = async () => {
   loader.loadAll('worker');
 
   await think.beforeStartServer().catch(err => think.logger.error(err));
-  await instance._getWorkerInstance(instance.parseArgv()).startServer();
+  await instance._getWorkerInstance(instance.parseArgv());
   think.app.emit('appReady');
 
   return think.app;
