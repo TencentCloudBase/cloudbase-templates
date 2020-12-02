@@ -87,6 +87,7 @@ function LoginFail() {
       >
         <img
           width="420"
+          alt="CloudBase Framework"
           src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
         />
       </a>
