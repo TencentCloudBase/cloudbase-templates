@@ -1,3 +1,5 @@
+<a href="https://github.com/TencentCloudBase/cloudbase-templates"><img src="https://main.qcloudimg.com/raw/994de73cc1fc9fcae6355879306e2b63.png"></a>
+
 # ThinkJS 应用示例
 
 这个目录是基于云开发的一个 [ThinkJS](https://thinkjs.org/) 应用示例，包含 ThinkJS + 云函数，可以基于 **[CloudBase Framework](https://github.com/TencentCloudBase/cloudbase-framework)** 框架将项目一键部署到云开发环境
