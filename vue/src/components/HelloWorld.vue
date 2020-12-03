@@ -73,6 +73,7 @@ export default {
         });
         this.callFunctionResult = res;
       } catch (e) {
+        console.error(e)
         this.callFunctionResult = e.message;
       }
     },
