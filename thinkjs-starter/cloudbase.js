@@ -10,11 +10,10 @@ const instance = new Application({
   proxy: true, // use proxy
   env: 'cloudbase'
 });
+const loader = new Loader(instance.options);
+loader.loadAll('worker');
 
 exports.tcbGetApp = async () => {
-  const loader = new Loader(instance.options);
-  loader.loadAll('worker');
-
   await think.beforeStartServer().catch(err => think.logger.error(err));
   await instance._getWorkerInstance(instance.parseArgv());
   think.app.emit('appReady');
