@@ -3,6 +3,7 @@
     <img class="logo" alt="CloudBase logo" src="./assets/cloudbase.png" />
     <img class="logo" alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="欢迎使用云开发 CloudBase Vue.js App" />
+    <span>add new</span>  
   </div>
 </template>
 
