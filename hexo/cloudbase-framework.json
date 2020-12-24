@@ -1,0 +1,12 @@
+{
+    "name": "hexo",
+    "plugins": {
+        "hexo": {
+            "use": "@cloudbase/framework-plugin-website",
+            "inputs": {
+                "buildCommand": "npx hexo generate",
+                "outputPath": "./public"
+            }
+        }
+    }
+}
