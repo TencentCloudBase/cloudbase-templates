@@ -1,8 +1,8 @@
 const getApp = require('./dist/app').default;
 
 async function tcbGetApp () {
-  const app = await getApp();
-  return app;
+  const darukApp = await getApp();
+  return darukApp.app;
 }
 
 exports.tcbGetApp = tcbGetApp;
