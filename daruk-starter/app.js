@@ -5,6 +5,4 @@ async function tcbGetApp () {
   return app;
 }
 
-module.exports = {
-  tcbGetApp,
-};
+exports.tcbGetApp = tcbGetApp;
