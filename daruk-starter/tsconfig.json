@@ -4,7 +4,7 @@
     "target": "es2017",
     "module": "commonjs",
     "sourceMap": true,
-    "outDir": "./build",
+    "outDir": "./dist",
     "rootDir": "./src",
     "typeRoots": [],
     "types": [],
