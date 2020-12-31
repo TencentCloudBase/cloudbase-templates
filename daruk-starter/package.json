@@ -8,7 +8,7 @@
     "start": "npm run serve:prod",
     "dev": "nodemon dev.js",
     "serve:dev": "ts-node --project tsconfig.json --files src/index.ts",
-    "serve:prod": "npm run build && node ./index.js",
+    "serve:prod": "node ./index.js",
     "build": "tsc",
     "deploy": "npm run build && cloudbase framework deploy"
   },

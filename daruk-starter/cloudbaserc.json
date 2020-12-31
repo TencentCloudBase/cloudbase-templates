@@ -7,6 +7,7 @@
       "node": {
         "use": "@cloudbase/framework-plugin-node",
         "inputs": {
+          "entry": "app.js",
           "name": "daruk-starter",
           "path": "/daruk-starter"
         }
