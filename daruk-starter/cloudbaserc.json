@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "envId": "{{envId}}",
+  "framework": {
+    "name": "daruk-starter",
+    "plugins": {
+      "node": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "name": "daruk-starter",
+          "path": "/daruk-starter"
+        }
+      }
+    }
+  }
+}
