@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "legacyWatch": true,
+  "ignoreRoot": [".git"]
+}

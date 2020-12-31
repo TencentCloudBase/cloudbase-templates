@@ -5,7 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node --project tsconfig.json --files src/index.ts",
+    "start": "npm run serve:prod",
+    "dev": "nodemon dev.js",
+    "serve:dev": "ts-node --project tsconfig.json --files src/index.ts",
+    "serve:prod": "npm run build && node ./index.js",
     "build": "tsc",
     "deploy": "npm run build && cloudbase framework deploy"
   },
@@ -15,5 +18,9 @@
     "typescript": "^4.1.3"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "execa": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
 }
