@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const daruk_1 = require("daruk");
 let Site = class Site {
     async index(ctx) {
-        let pathname = ctx.path;
+        let pathname = ctx.headers[':path'] || '';
         pathname = pathname.replace(/\/$/, '');
         await ctx.render('home', {
             title: 'home',

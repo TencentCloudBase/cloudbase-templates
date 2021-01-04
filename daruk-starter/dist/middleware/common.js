@@ -9,7 +9,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.KoaStatic = exports.KoaEjs = void 0;
 const koa_ejs_1 = __importDefault(require("koa-ejs"));
+const koa_static_1 = __importDefault(require("koa-static"));
 const path_1 = require("../util/path");
 const daruk_1 = require("daruk");
 let KoaEjs = class KoaEjs {
@@ -27,5 +29,17 @@ let KoaEjs = class KoaEjs {
 KoaEjs = __decorate([
     daruk_1.defineMiddleware('koa-ejs')
 ], KoaEjs);
-exports.default = KoaEjs;
-//# sourceMappingURL=ejs.js.map
+exports.KoaEjs = KoaEjs;
+let KoaStatic = class KoaStatic {
+    initMiddleware(daruk) {
+        return async (ctx, next) => {
+            daruk.app.use(koa_static_1.default(path_1.resolve('./public')));
+            await next();
+        };
+    }
+};
+KoaStatic = __decorate([
+    daruk_1.defineMiddleware('koa-static')
+], KoaStatic);
+exports.KoaStatic = KoaStatic;
+//# sourceMappingURL=common.js.map
