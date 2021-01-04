@@ -29,4 +29,9 @@ export default class Site {
       }
     };
   }
+
+  @get('/api/error')
+  public async error(ctx: DarukContext) {
+    throw new Error('custom error');
+  }
 }
