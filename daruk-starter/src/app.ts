@@ -1,16 +1,16 @@
 import { DarukServer } from 'daruk';
-import { resolve } from './util/path';
 
 export default async function getApp() {
   const darukApp = DarukServer({
-    rootPath: resolve('.'),
+    rootPath: __dirname,
     middlewareOrder: [
       'error',
+      'koa-static',
       'koa-ejs'
     ],
   });
-  await darukApp.loadFile('src/middleware');
-  await darukApp.loadFile('src/controller');
+  await darukApp.loadFile('middleware');
+  await darukApp.loadFile('controller');
   await darukApp.binding();
   return darukApp;
 }
