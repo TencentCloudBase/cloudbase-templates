@@ -6,14 +6,15 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run serve:prod",
-    "dev": "nodemon dev.js",
-    "serve:dev": "ts-node --project tsconfig.json --files src/index.ts",
+    "dev": "npm run serve:dev",
+    "serve:dev": "nodemon --exec 'ts-node' --project tsconfig.json src/index.ts",
     "serve:prod": "node ./index.js",
     "build": "tsc",
     "deploy": "npm run build && cloudbase framework deploy"
   },
   "dependencies": {
     "daruk": "^2.2.4",
+    "koa-ejs": "^4.3.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   },
