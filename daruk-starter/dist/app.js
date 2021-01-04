@@ -6,6 +6,7 @@ async function getApp() {
         rootPath: __dirname,
         middlewareOrder: [
             'error',
+            'koa-static',
             'koa-ejs'
         ],
     });
