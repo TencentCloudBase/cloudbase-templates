@@ -7,21 +7,20 @@
   "scripts": {
     "start": "npm run serve:prod",
     "dev": "npm run serve:dev",
-    "serve:dev": "nodemon --exec 'ts-node' --project tsconfig.json src/index.ts",
+    "serve:dev": "ts-node-dev --project tsconfig.json --inspect -- src/index.ts",
     "serve:prod": "node ./index.js",
     "build": "tsc",
     "deploy": "npm run build && cloudbase framework deploy"
   },
   "dependencies": {
     "daruk": "^2.2.4",
-    "koa-ejs": "^4.3.0",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "koa-ejs": "^4.3.0"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "execa": "^5.0.0",
-    "nodemon": "^2.0.6"
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
   }
 }

@@ -8,11 +8,17 @@ import {
 @controller()
 export default class Site {
   @get('/')
-  @middleware('koa-ejs')
   public async index(ctx: DarukContext) {
+    let pathname = ctx.path
+    pathname = pathname.replace(/\/$/, '');
     await ctx.render('home', {
       title: 'home',
-      pathname: '',
+      pathname,
     });
+  }
+
+  @get('/error')
+  public async error(ctx: DarukContext) {
+    throw new Error('custom error');
   }
 }

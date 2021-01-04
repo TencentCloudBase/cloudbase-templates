@@ -18,8 +18,6 @@ export default class KoaEjs implements MiddlewareClass {
         root: resolve('view'),
         viewExt: 'ejs',
         layout: false,
-        cache: false,
-        debug: true
       });
       await next();
     };
