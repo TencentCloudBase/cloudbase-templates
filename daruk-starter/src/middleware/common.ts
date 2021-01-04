@@ -1,4 +1,5 @@
 import ejs from 'koa-ejs';
+import koaStatic from 'koa-static';
 import {
   resolve,
 } from '../util/path';
@@ -11,7 +12,7 @@ import {
 } from 'daruk';
 
 @defineMiddleware('koa-ejs')
-export default class KoaEjs implements MiddlewareClass {
+export class KoaEjs implements MiddlewareClass {
   public initMiddleware(daruk: Daruk) {
     return async (ctx: DarukContext, next: Next) => {
       ejs(daruk.app, {
@@ -19,6 +20,16 @@ export default class KoaEjs implements MiddlewareClass {
         viewExt: 'ejs',
         layout: false,
       });
+      await next();
+    };
+  }
+}
+
+@defineMiddleware('koa-static')
+export class KoaStatic implements MiddlewareClass {
+  public initMiddleware(daruk: Daruk) {
+    return async (ctx: DarukContext, next: Next) => {
+      daruk.app.use(koaStatic(resolve('./public')));
       await next();
     };
   }

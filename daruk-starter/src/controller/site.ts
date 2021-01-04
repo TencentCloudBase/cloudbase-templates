@@ -9,7 +9,7 @@ import {
 export default class Site {
   @get('/')
   public async index(ctx: DarukContext) {
-    let pathname = ctx.path
+    let pathname = ctx.headers[':path'] || '';
     pathname = pathname.replace(/\/$/, '');
     await ctx.render('home', {
       title: 'home',

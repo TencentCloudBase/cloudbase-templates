@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "daruk": "^2.2.4",
-    "koa-ejs": "^4.3.0"
+    "koa-ejs": "^4.3.0",
+    "koa-static": "^5.0.0"
   },
   "author": "",
   "license": "ISC",
