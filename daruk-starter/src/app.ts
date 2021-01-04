@@ -1,17 +1,9 @@
-import { DarukServer, controller, get, DarukContext } from 'daruk';
+import { DarukServer } from 'daruk';
 
 export default async function getApp() {
   const darukApp = DarukServer();
-
-  @controller()
-  class Index {
-    @get('/')
-    public async index(ctx: DarukContext) {
-      ctx.body = 'hello daruk';
-    }
-  }
-
+  await darukApp.loadFile('./middleware');
+  await darukApp.loadFile('./controller');
   await darukApp.binding();
   return darukApp;
 }
-

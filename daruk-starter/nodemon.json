@@ -1,5 +1,7 @@
 {
   "verbose": true,
-  "legacyWatch": true,
-  "ignoreRoot": [".git"]
+  "watch": [
+    "src/**/*.ts",
+    "view/**/*.tpl"
+  ]
 }
