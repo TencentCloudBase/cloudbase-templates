@@ -23,7 +23,15 @@
       </a>
     </p>
   </section>
-  <section class="content"></section>
+  <section class="content">
+    <h3 class="caption">headers:</h3>
+    <ul class="list" id="demo-list">
+      <% Object.keys(headers).forEach(function(key){ %>
+      <li><span><%= key %></span> <span>:</span> <span><%= headers[key] %></span></li>
+      <% }); %>
+    </ul>
+  </section>
+  <section class="content">
     <h3 class="caption">示例:</h3>
     <ul class="list" id="demo-list">
       <li><a href="<%= pathname %>/error"><%= pathname %>/error</a> 报错信息包装呈现</li>

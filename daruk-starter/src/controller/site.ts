@@ -13,6 +13,7 @@ export default class Site {
     pathname = pathname.replace(/\/$/, '');
     await ctx.render('home', {
       title: 'home',
+      headers: ctx.headers,
       pathname,
     });
   }
