@@ -24,6 +24,15 @@
     </p>
   </section>
   <section class="content">
+    <h3 class="caption">示例:</h3>
+    <ul class="list" id="demo-list">
+      <li><a href="<%= pathname %>/error"><%= pathname %>/error</a> 报错信息包装呈现</li>
+      <li><a href="<%= pathname %>/api/info"><%= pathname %>/api/info</a> 普通 json 接口</li>
+      <li><a href="<%= pathname %>/api/cors"><%= pathname %>/api/cors</a> CORS json 接口</li>
+      <li><a href="<%= pathname %>/api/error"><%= pathname %>/api/error</a> 接口报错封装</li>
+    </ul>
+  </section>
+  <section class="content">
     <h3 class="caption">headers:</h3>
     <ul class="list" id="demo-list">
       <% Object.keys(headers).forEach(function(key){ %>
@@ -32,12 +41,11 @@
     </ul>
   </section>
   <section class="content">
-    <h3 class="caption">示例:</h3>
+    <h3 class="caption">process.env:</h3>
     <ul class="list" id="demo-list">
-      <li><a href="<%= pathname %>/error"><%= pathname %>/error</a> 报错信息包装呈现</li>
-      <li><a href="<%= pathname %>/api/info"><%= pathname %>/api/info</a> 普通 json 接口</li>
-      <li><a href="<%= pathname %>/api/cors"><%= pathname %>/api/cors</a> CORS json 接口</li>
-      <li><a href="<%= pathname %>/api/error"><%= pathname %>/api/error</a> 接口报错封装</li>
+      <% Object.keys(env).forEach(function(key){ %>
+      <li><span><%= key %></span> <span>:</span> <span><%= env[key] %></span></li>
+      <% }); %>
     </ul>
   </section>
 </div>
