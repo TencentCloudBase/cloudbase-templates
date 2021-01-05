@@ -1,0 +1,27 @@
+{
+  "name": "daruk-demo",
+  "version": "0.0.0-development",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve:prod",
+    "dev": "npm run serve:dev",
+    "serve:dev": "ts-node-dev --project tsconfig.json --inspect -- src/index.ts",
+    "serve:prod": "node ./index.js",
+    "build": "tsc",
+    "deploy": "npm run build && cloudbase framework deploy"
+  },
+  "dependencies": {
+    "daruk": "^2.2.4",
+    "koa-ejs": "^4.3.0",
+    "koa-static": "^5.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  }
+}

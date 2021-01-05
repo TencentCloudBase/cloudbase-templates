@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "watch": [
+    "src/**/*.ts",
+    "view/**/*.tpl"
+  ]
+}
