@@ -12,11 +12,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const daruk_1 = require("daruk");
 let Site = class Site {
     async index(ctx) {
-        let pathname = ctx.headers[':path'] || '';
-        pathname = pathname.replace(/\/$/, '');
+        let pathname = `/${process.env.SCF_FUNCTIONNAME}`;
         await ctx.render('home', {
             title: 'home',
             headers: ctx.headers,
+            env: process.env,
             pathname,
         });
     }
