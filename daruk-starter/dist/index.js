@@ -6,6 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
 (async () => {
     const app = await app_1.default();
-    app.listen(3000);
+    const port = 3000;
+    console.log(`server start at http://127.0.0.1:${port}`);
+    app.listen(port);
 })();
 //# sourceMappingURL=index.js.map
