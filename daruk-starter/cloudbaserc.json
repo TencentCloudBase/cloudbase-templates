@@ -1,6 +1,7 @@
 {
   "version": "2.0",
   "envId": "{{envId}}",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "framework": {
     "name": "daruk-starter",
     "plugins": {
@@ -9,7 +10,8 @@
         "inputs": {
           "entry": "app.js",
           "name": "daruk-starter",
-          "path": "/daruk-starter"
+          "path": "/daruk-starter",
+          "buildCommand": "npm i --prefer-offline && npm run build"
         }
       }
     }
