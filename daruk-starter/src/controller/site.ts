@@ -9,11 +9,11 @@ import {
 export default class Site {
   @get('/')
   public async index(ctx: DarukContext) {
-    let pathname = ctx.headers[':path'] || '';
-    pathname = pathname.replace(/\/$/, '');
+    let pathname = `/${process.env.SCF_FUNCTIONNAME}`;
     await ctx.render('home', {
       title: 'home',
       headers: ctx.headers,
+      env: process.env,
       pathname,
     });
   }
