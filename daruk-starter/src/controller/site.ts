@@ -1,20 +1,21 @@
 import {
   controller,
-  middleware,
   get,
   DarukContext,
 } from 'daruk';
+import {
+  requestRoot,
+} from '../util/path';
 
 @controller()
 export default class Site {
   @get('/')
   public async index(ctx: DarukContext) {
-    let pathname = `/${process.env.SCF_FUNCTIONNAME}`;
+    console.log('process.env:', process.env);
     await ctx.render('home', {
       title: 'home',
       headers: ctx.headers,
-      env: process.env,
-      pathname,
+      pathname: requestRoot(),
     });
   }
 

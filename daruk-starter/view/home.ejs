@@ -40,13 +40,5 @@
       <% }); %>
     </ul>
   </section>
-  <section class="content">
-    <h3 class="caption">process.env:</h3>
-    <ul class="list" id="demo-list">
-      <% Object.keys(env).forEach(function(key){ %>
-      <li><span><%= key %></span> <span>:</span> <span><%= env[key] %></span></li>
-      <% }); %>
-    </ul>
-  </section>
 </div>
 <%- include(`./common/footer.ejs`) %>
