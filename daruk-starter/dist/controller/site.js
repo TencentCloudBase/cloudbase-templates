@@ -10,14 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const daruk_1 = require("daruk");
+const path_1 = require("../util/path");
 let Site = class Site {
     async index(ctx) {
-        let pathname = `/${process.env.SCF_FUNCTIONNAME}`;
+        console.log('process.env:', process.env);
         await ctx.render('home', {
             title: 'home',
             headers: ctx.headers,
-            env: process.env,
-            pathname,
+            pathname: path_1.requestRoot(),
         });
     }
     async error(ctx) {
