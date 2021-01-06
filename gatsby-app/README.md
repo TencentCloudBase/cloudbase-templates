@@ -1,4 +1,4 @@
-# React 示例
+# Gatsby.js 示例
 
 参考文档：https://docs.cloudbase.net/quick-start/web/gatsby.html
 
