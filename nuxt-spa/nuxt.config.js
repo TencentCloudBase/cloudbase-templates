@@ -1,5 +1,5 @@
 export default {
-  mode: "spa",
+  ssr: false,
 
   server: {
     port: 5000, // default: 3000
