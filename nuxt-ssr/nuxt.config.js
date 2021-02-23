@@ -1,5 +1,5 @@
 export default {
-  mode: "universal",
+  ssr: true,
 
   server: {
     port: 5000, // default: 3000
