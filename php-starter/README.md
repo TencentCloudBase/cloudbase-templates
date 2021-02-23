@@ -30,26 +30,6 @@ cloudbase init --template php-starter
 cloudbase framework deploy
 ```
 
-## 开发命令及配置
-
-### 本地开发
-
-```
-npm run dev
-```
-
-### 上线部署
-
-```
-npm run deploy
-```
-
-### Lint
-
-```
-npm run lint
-```
-
 ### CloudBase Framework 相关开发配置
 
 查看 [CloudBase Framework 配置](https://github.com/TencentCloudBase/cloudbase-framework).
