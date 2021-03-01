@@ -17,12 +17,19 @@
       </div>
 
       <client-only>
-        <template v-if="isLoginSuccss">
-          <LoginState v-slot="{ loginState }">
-            <h2>登录云开发</h2>
-            <p>{{ loginState ? "已登录" : "未登录" }}</p>
-          </LoginState>
-
+        <template>
+          <div>
+            <h2>
+              通过
+              <a
+                href="https://cloud.tencent.com/document/product/876/46177"
+                target="_blank"
+              >
+                未登录 + 安全规则
+              </a>
+              的方式调用云开发
+            </h2>
+          </div>
           <h2>调用云函数</h2>
           <p>
             点击
@@ -32,33 +39,6 @@
             <b>云函数执行结果</b>
           </p>
           <p>{{ callFunctionResult }}</p>
-        </template>
-        <template v-else-if="isLoginSuccss === false">
-          <h2>为了演示云开发功能，需要开启匿名登录</h2>
-          <p>
-            登录腾讯云 Cloudbase
-            <a
-              href="https://console.cloud.tencent.com/tcb"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="links"
-            >控制台</a>，在
-            <a
-              v-bind:href="
-                `https://console.cloud.tencent.com/tcb/env/login?envId=${envId}`
-              "
-              class="links"
-              target="_blank"
-              rel="noopener noreferrer"
-            >登录授权</a>
-            中，将“匿名登录”一栏打开，然后等待 1 分钟后刷新页面。
-          </p>
-          <p>
-            <img
-              src="https://main.qcloudimg.com/raw/f342f7b23513e12c2b06677a54a5efbc.png"
-              alt="开启匿名登录"
-            />
-          </p>
         </template>
       </client-only>
       <h2>本示例 Github 源码地址：</h2>

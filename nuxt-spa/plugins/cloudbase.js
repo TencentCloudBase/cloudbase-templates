@@ -1,7 +1,12 @@
 import Vue from "vue";
-import Cloudbase from "@cloudbase/vue-provider";
-import config from "../cloudbaserc";
+import CloudBase from "@cloudbase/vue-provider";
 
-Vue.use(Cloudbase, {
-  env: config.envId
+window._tcbEnv = window._tcbEnv || {};
+
+export const envId = window._tcbEnv.TCB_ENV_ID;
+export const region = window._tcbEnv.TCB_REGION;
+
+Vue.use(CloudBase, {
+  env: envId,
+  region: region
 });

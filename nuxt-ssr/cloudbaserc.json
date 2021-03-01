@@ -13,16 +13,32 @@
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
           "functionRootPath": "cloudfunctions",
-          "functions": [{
-            "name": "nuxt-ssr-echo",
-            "timeout": 5,
-            "envVariables": {},
-            "runtime": "Nodejs10.15",
-            "memory": 128
-          }],
+          "functions": [
+            {
+              "name": "nuxt-ssr-echo",
+              "timeout": 5,
+              "envVariables": {},
+              "runtime": "Nodejs10.15",
+              "memory": 128,
+              "aclRule": {
+                "invoke": true
+              }
+            }
+          ],
           "servicePaths": {
             "nuxt-ssr-echo": "/nuxt-ssr-echo"
           }
+        }
+      },
+      "auth": {
+        "use": "@cloudbase/framework-plugin-auth",
+        "inputs": {
+          "configs": [
+            {
+              "platform": "NONLOGIN",
+              "status": "ENABLE"
+            }
+          ]
         }
       }
     }

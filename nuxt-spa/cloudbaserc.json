@@ -3,17 +3,6 @@
   "envId": "{{envId}}",
   "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "functionRoot": "cloudfunctions",
-  "functions": [
-    {
-      "name": "nuxt-spa-echo",
-      "config": {
-        "timeout": 5,
-        "envVariables": {},
-        "runtime": "Nodejs10.15",
-        "memorySize": 128
-      }
-    }
-  ],
   "framework": {
     "name": "nuxt-spa",
     "plugins": {
@@ -28,8 +17,29 @@
       "server": {
         "use": "@cloudbase/framework-plugin-function",
         "inputs": {
-          "functionRootPath": "cloudfunctions"
+          "functionRootPath": "cloudfunctions",
+          "functions": [
+            {
+              "name": "nuxt-spa-echo",
+              "timeout": 5,
+              "envVariables": {},
+              "runtime": "Nodejs10.15",
+              "memorySize": 128,
+              "aclRule": { "invoke": true }
+            }
+          ]
         }
+      }
+    },
+    "auth": {
+      "use": "@cloudbase/framework-plugin-auth",
+      "inputs": {
+        "configs": [
+          {
+            "platform": "NONLOGIN",
+            "status": "ENABLE"
+          }
+        ]
       }
     }
   }
