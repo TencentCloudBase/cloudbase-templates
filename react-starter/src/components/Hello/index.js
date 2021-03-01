@@ -55,6 +55,29 @@ export default function Hello() {
         </p>
         <p>{callFunctionResult}</p>
       </div>
+      <h2>本示例 Github 源码地址</h2>
+      <a href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/react-starter">
+        https://github.com/TencentCloudBase/cloudbase-templates/tree/master/react-starter
+      </a>
+      <h2>
+        开发部署工具: CloudBase Framework
+        <a href="https://github.com/TencentCloudBase/cloudbase-framework">
+          <img
+            alt="CloudBase Framework"
+            src="https://img.shields.io/github/stars/TencentCloudBase/cloudbase-framework?style=social"
+          />
+        </a>
+      </h2>
+      <a
+        href="https://github.com/TencentCloudBase/cloudbase-framework"
+        title="CloudBase Framework: 云开发前后端一体化部署工具"
+      >
+        <img
+          width="420"
+          alt="CloudBase Framework"
+          src="https://main.qcloudimg.com/raw/615038b16047fa677646011fae909102.png"
+        />
+      </a>
     </div>
   );
 }

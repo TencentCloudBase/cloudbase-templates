@@ -1,23 +1,18 @@
-import cloudbase from "@cloudbase/js-sdk";
+import tcb from "@cloudbase/js-sdk";
 
-// 将你的环境 Id 填写到此处
-export const envId = process.env.REACT_APP_ENV_ID;
-
-let app;
-let auth;
+window._tcbEnv = window._tcbEnv || {};
+export const envId = window._tcbEnv.TCB_ENV_ID;
+export const region = window._tcbEnv.TCB_REGION;
 
 export const getApp = () => {
-  if (!app) {
-    app = cloudbase.init({
-      env: envId,
-    });
-  }
+  const app = tcb.init({
+    env: envId,
+    region: region,
+  });
 
-  if (!auth) {
-    auth = app.auth({
-      persistence: "local",
-    });
-  }
+  app.auth({
+    persistence: "local",
+  });
 
   return app;
 };
