@@ -1,12 +1,13 @@
-import Vue from "vue";
-import CloudBase from "@cloudbase/vue-provider";
+// import Vue from "vue";
+// import CloudBase from "@cloudbase/vue-provider";
 
-window._tcbEnv = window._tcbEnv || {};
+// export default async () => {
+//   const { envId, region } = await fetch("/nuxt-ssr-echo/").then(response =>
+//     response.json()
+//   );
 
-export const envId = window._tcbEnv.TCB_ENV_ID;
-export const region = window._tcbEnv.TCB_REGION;
-
-Vue.use(CloudBase, {
-  env: envId,
-  region: region
-});
+//   Vue.use(CloudBase, {
+//     env: envId,
+//     region
+//   });
+// };

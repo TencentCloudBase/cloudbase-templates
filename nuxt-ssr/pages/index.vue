@@ -6,41 +6,10 @@
       <h2 class="subtitle">云开发 CloudBase + Nuxt SSR 全栈应用，包含前端网站 + 云开发函数</h2>
       <div class="links">
         <a href="https://cloudbase.net/" target="_blank" class="button--green">云开发 CloudBase 文档</a>
-        <a
-          href="https://docs.cloudbase.net/cloudbase-vue/introduce.html"
-          target="_blank"
-          rel="noopener"
-          class="button--green"
-        >云开发 Vue 插件</a>
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Nuxt 文档</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
 
-      <client-only>
-        <template>
-          <div>
-            <h2>
-              通过
-              <a
-                href="https://cloud.tencent.com/document/product/876/46177"
-                target="_blank"
-              >
-                未登录 + 安全规则
-              </a>
-              的方式调用云开发
-            </h2>
-          </div>
-          <h2>调用云函数</h2>
-          <p>
-            点击
-            <a href="javascript:;" @click="callFunction">调用 nuxt-ssr-echo 云函数</a>
-          </p>
-          <p>
-            <b>云函数执行结果</b>
-          </p>
-          <p>{{ callFunctionResult }}</p>
-        </template>
-      </client-only>
       <h2>本示例 Github 源码地址：</h2>
       <a
         href="https://github.com/TencentCloudBase/cloudbase-templates/tree/master/nuxt-ssr"
@@ -80,41 +49,7 @@ export default {
       envId: "",
       callFunctionResult: "",
     };
-  },
-  async mounted() {
-    this.envId = this.$cloudbase.config.env;
-    // 以匿名登录为例
-    try {
-      const auth = this.$cloudbase.auth({ persistence: "local" });
-
-      if (!auth.hasLoginState()) {
-        await auth.anonymousAuthProvider().signIn();
-      }
-
-      console.log("用户id", auth.hasLoginState().user.uid);
-
-      this.isLoginSuccss = true;
-    } catch (e) {
-      this.isLoginSuccss = false;
-      console.error(e);
-      console.log(e.code);
-    }
-  },
-  methods: {
-    async callFunction() {
-      try {
-        const res = await this.$cloudbase.callFunction({
-          name: "nuxt-ssr-echo",
-          data: {
-            foo: "bar",
-          },
-        });
-        this.callFunctionResult = res;
-      } catch (e) {
-        this.callFunctionResult = e.message;
-      }
-    },
-  },
+  }
 };
 </script>
 

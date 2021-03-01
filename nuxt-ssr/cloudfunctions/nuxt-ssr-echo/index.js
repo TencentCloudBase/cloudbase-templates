@@ -7,6 +7,7 @@ exports.main = async (event, context) => {
 
   return {
     event,
-    envId: cloud.parseContext(context).namespace
+    envId: cloud.parseContext(context).namespace,
+    region: process.env.TENCENTCLOUD_REGION
   };
 };
