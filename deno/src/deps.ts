@@ -3,10 +3,10 @@ export {
   Router,
   send,
   Context,
-} from "https://deno.land/x/oak@v6.2.0/mod.ts";
+} from "https://deno.land/x/oak@v6.0.1/mod.ts";
 
+import { State } from "https://deno.land/x/oak@v6.0.1/application.ts";
 export type State = State;
-import { State } from "https://deno.land/x/oak@v6.2.0/application.ts";
 
 export { renderFile } from "https://raw.githubusercontent.com/syumai/dejs/master/mod.ts";
 
