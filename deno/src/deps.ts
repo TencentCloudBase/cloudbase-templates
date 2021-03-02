@@ -5,8 +5,8 @@ export {
   Context,
 } from "https://deno.land/x/oak@v6.0.1/mod.ts";
 
-import { State } from "https://deno.land/x/oak@v6.0.1/application.ts";
-export type State = State;
+import { State as OakState } from "https://deno.land/x/oak@v6.0.1/application.ts";
+export type State = OakState;
 
 export { renderFile } from "https://raw.githubusercontent.com/syumai/dejs/master/mod.ts";
 

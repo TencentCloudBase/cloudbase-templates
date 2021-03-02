@@ -1,5 +1,6 @@
 ### Deno ###
 # Logs
+dist
 logs
 *.log
 TCBSAM.yaml
