@@ -38,10 +38,26 @@ cloudbase framework deploy
 
 ### 配置开发环境
 
+由于 Deno Api 不稳定，导致其生态下相关插件有时不能匹配最新版本。
+
+所以推荐安装指定版本来规避兼容性问题。
+
+安装 deno
+
+```bash
+curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.3.0
+```
+
+已安装 deno 情况下，需配置为指定版本
+
+```bash
+deno upgrade –version 1.3.0
+```
+
 安装 denon
 
 ```bash
-deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon/denon.ts
+deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon@2.4.0/denon.ts
 ```
 
 服务使用 [denon](https://github.com/denosaurs/denon) 管理进程。
