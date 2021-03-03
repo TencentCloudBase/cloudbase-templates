@@ -51,7 +51,7 @@ curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.3.3
 已安装 deno 情况下，需配置为指定版本
 
 ```bash
-deno upgrade –-version 1.3.3
+deno upgrade --version 1.3.3
 ```
 
 安装 denon
