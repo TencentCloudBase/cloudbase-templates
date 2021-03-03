@@ -2,17 +2,22 @@ scripts:
   lint: deno fmt --check ./src
   build:
     cmd: mkdir dist && deno bundle ./src/entry.ts ./dist/entry.js
+    importmap: import_map.json
     watch: false
   start:
-    cmd: deno run --no-check ./dist/entry.js
+    cmd: deno run ./dist/entry.js
     env:
       PATHNAME: "/deno-app"
+    no-check: true
     allow:
       - net
       - env
       - read
   dev:
-    cmd: deno run --no-check ./src/entry.ts
+    cmd: deno run ./src/entry.ts
+    importmap: import_map.json
+    no-check: true
+    unstable: true
     env:
       PORT: "3000"
     allow:
