@@ -45,19 +45,19 @@ cloudbase framework deploy
 安装 deno
 
 ```bash
-curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.3.3
+curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.7.5
 ```
 
 已安装 deno 情况下，需配置为指定版本
 
 ```bash
-deno upgrade --version 1.3.3
+deno upgrade --version 1.7.5
 ```
 
 安装 denon
 
 ```bash
-deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon@2.4.0/denon.ts
+deno install --allow-read --allow-run --allow-write --allow-net -f -q --unstable https://deno.land/x/denon@2.4.7/denon.ts
 ```
 
 服务使用 [denon](https://github.com/denosaurs/denon) 管理进程。
