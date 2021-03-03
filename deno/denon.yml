@@ -1,7 +1,7 @@
 scripts:
   lint: deno fmt --check ./src
   build:
-    cmd: mkdir dist && deno bundle ./src/entry.ts ./dist/entry.js
+    cmd: rm -rf dist && mkdir dist && deno bundle ./src/entry.ts ./dist/entry.js
     importmap: import_map.json
     watch: false
   start:
