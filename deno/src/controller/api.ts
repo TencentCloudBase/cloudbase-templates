@@ -12,8 +12,8 @@ export const api = {
     ctx.response.body = {
       code: 0,
       msg: "ok",
-      data: Deno.env.toObject()
-    }
+      data: Deno.env.toObject(),
+    };
   },
   error() {
     throw new Error("api error");

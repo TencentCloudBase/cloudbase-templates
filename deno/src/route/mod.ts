@@ -1,11 +1,5 @@
-import {
-  Application,
-  Router,
-} from "../deps.ts";
-import {
-  site,
-  api,
-} from "../controller/mod.ts";
+import { Application, Router } from "../deps.ts";
+import { api, site } from "../controller/mod.ts";
 
 export const router = new Router();
 

@@ -9,6 +9,7 @@ export async function statics(ctx: Context) {
         root: `${Deno.cwd()}/public`,
       });
     } catch (err) {
+      console.log("static", err);
       if (ctx.response.status === 404) {
         ctx.response.body = "";
       }
