@@ -1,4 +1,4 @@
-import { Context } from "../types.d.ts";
+import { Context } from "../types.ts";
 
 export async function timing(ctx: Context, next: Function) {
   const start = Date.now();

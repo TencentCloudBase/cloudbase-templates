@@ -1,5 +1,5 @@
 import { renderFile } from "../deps.ts";
-import { Context } from "../types.d.ts";
+import { Context } from "../types.ts";
 
 export async function error(ctx: Context, next: Function) {
   try {

@@ -9,7 +9,7 @@
  */
 
 export function fixTo(num: number, width: number) {
-  let str: string = num.toString();
+  const str: string = num.toString();
   width = Math.max((width || 2) - str.length + 1, 0);
   return new Array(width).join("0") + str;
 }

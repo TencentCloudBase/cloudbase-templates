@@ -1,4 +1,4 @@
-import { Context } from "../types.d.ts";
+import { Context } from "../types.ts";
 import { Logger } from "../service/logger.ts";
 
 export async function logger(ctx: Context, next: Function) {

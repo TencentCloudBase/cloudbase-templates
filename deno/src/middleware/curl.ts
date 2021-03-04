@@ -1,4 +1,4 @@
-import { Context } from "../types.d.ts";
+import { Context } from "../types.ts";
 import { curl as $curl } from "../service/curl.ts";
 
 export async function curl(ctx: Context, next: Function) {

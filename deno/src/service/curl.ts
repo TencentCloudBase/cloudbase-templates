@@ -1,4 +1,4 @@
-import { Context } from "../types.d.ts";
+import { Context } from "../types.ts";
 import { getRnd36, getTime36 } from "../util/str.ts";
 
 const fname = "[curl]";

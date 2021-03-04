@@ -1,5 +1,5 @@
 import { send } from "../deps.ts";
-import { Context } from "../types.d.ts";
+import { Context } from "../types.ts";
 
 export async function statics(ctx: Context) {
   const pathname = ctx.request.url?.pathname;
