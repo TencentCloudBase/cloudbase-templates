@@ -2,7 +2,6 @@ import { Application } from "./deps.ts";
 import { router } from "./route/mod.ts";
 import {
   curl,
-  empty,
   error,
   logger as midLogger,
   statics,
@@ -16,7 +15,6 @@ app.use(error);
 app.use(midLogger);
 app.use(curl);
 app.use(timing);
-app.use(empty);
 app.use(router.routes());
 app.use(router.allowedMethods());
 app.use(statics);
