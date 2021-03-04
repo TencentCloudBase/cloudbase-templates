@@ -1,5 +1,6 @@
 scripts:
-  lint: deno fmt --check ./src
+  lint: deno lint --unstable ./src
+  check: deno fmt --check ./src
   fmt: deno fmt ./src
   build:
     cmd: rm -rf dist && mkdir dist && deno bundle ./src/entry.ts ./dist/entry.js
