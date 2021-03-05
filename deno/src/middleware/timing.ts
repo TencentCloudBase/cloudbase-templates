@@ -1,6 +1,6 @@
-import { Context } from "../types.ts";
+import { Context, NextFn } from "../types.ts";
 
-export async function timing(ctx: Context, next: Function) {
+export async function timing(ctx: Context, next: NextFn) {
   const start = Date.now();
   ctx.response.headers.set("X-Request-Time", `${start}`);
   await next();

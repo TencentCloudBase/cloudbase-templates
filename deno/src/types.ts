@@ -15,3 +15,5 @@ export declare type SimpleValue = null | undefined | string | number | boolean;
 export interface SimpleObject {
   [key: string]: SimpleValue;
 }
+
+export type NextFn = () => void;

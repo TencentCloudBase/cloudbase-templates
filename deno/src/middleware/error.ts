@@ -1,7 +1,7 @@
 import { renderFile } from "../deps.ts";
-import { Context } from "../types.ts";
+import { Context, NextFn } from "../types.ts";
 
-export async function error(ctx: Context, next: Function) {
+export async function error(ctx: Context, next: NextFn) {
   try {
     await next();
   } catch (err) {
