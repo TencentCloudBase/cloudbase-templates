@@ -1,5 +1,6 @@
-import { fixTo } from "./num.ts";
-import { substitute } from "./str.ts";
+import { fixTo } from './num.ts';
+import { substitute } from './str.ts';
+import { PlainObject } from '../types.ts';
 
 /**
  * 日期对象格式化输出
@@ -30,7 +31,7 @@ import { substitute } from "./str.ts";
  * - mss 毫秒数值，精确到3位(9 => '009')
  * - ms 毫秒原始数值
  * @method format
- * @param {Date} dobj 日期对象，或者可以被转换为日期对象的数据
+ * @param {Date} time 日期对象，或者可以被转换为日期对象的数据
  * @param {Object} [spec] 格式化选项
  * @param {Array} [spec.weekday='日一二三四五六'.split('')] 一周内各天对应名称，顺序从周日算起
  * @param {String} [spec.template='{{YYYY}}-{{MM}}-{{DD}} {{hh}}:{{mm}}'] 格式化模板
@@ -44,21 +45,53 @@ import { substitute } from "./str.ts";
  * 	// 2015年09月09日 周三 14时19分42秒
  */
 
-function rLimit(num: number, width: number) {
+function rLimit(num: number, width: number): string {
   const str: string = fixTo(num, width);
   const delta: number = str.length - width;
   return delta > 0 ? str.substr(delta) : str;
 }
 
-export function formatTime(dobj: Date | number, spec: object) {
-  let output = "";
-  let data: any = {};
+export interface DateFormatOptions {
+  weekday?: string[];
+  template?: string;
+}
+
+export interface DateObject {
+  year?: number;
+  month?: number;
+  date?: number;
+  day?: number;
+  hours?: number;
+  miniutes?: number;
+  seconds?: number;
+  milliSeconds?: number;
+  YYYY?: string;
+  YY?: string;
+  Y?: string;
+  MM?: string;
+  M?: string;
+  DD?: string;
+  D?: string;
+  d?: string;
+  hh?: string;
+  h?: string;
+  mm?: string;
+  m?: string;
+  ss?: string;
+  s?: string;
+  mss?: string;
+  ms?: string;
+}
+
+export function formatTime(time: Date | number, spec: DateFormatOptions): string {
+  let output = '';
+  const data: DateObject = {};
   const conf = {
-    weekday: "日一二三四五六".split(""),
-    template: "{{YYYY}}-{{MM}}-{{DD}} {{hh}}:{{mm}}",
+    weekday: '日一二三四五六'.split(''),
+    template: '{{YYYY}}-{{MM}}-{{DD}} {{hh}}:{{mm}}',
     ...spec,
   };
-  dobj = new Date(dobj);
+  const dobj: Date = new Date(Number(time));
   data.year = dobj.getFullYear();
   data.month = dobj.getMonth() + 1;
   data.date = dobj.getDate();
@@ -70,28 +103,28 @@ export function formatTime(dobj: Date | number, spec: object) {
 
   data.YYYY = rLimit(data.year, 4);
   data.YY = rLimit(data.year, 2);
-  data.Y = data.year;
+  data.Y = String(data.year);
 
   data.MM = fixTo(data.month, 2);
-  data.M = data.month;
+  data.M = String(data.month);
 
   data.DD = fixTo(data.date, 2);
-  data.D = data.date;
+  data.D = String(data.date);
 
   data.d = conf.weekday[data.day];
 
   data.hh = fixTo(data.hours, 2);
-  data.h = data.hours;
+  data.h = String(data.hours);
 
   data.mm = fixTo(data.miniutes, 2);
-  data.m = data.miniutes;
+  data.m = String(data.miniutes);
 
   data.ss = fixTo(data.seconds, 2);
-  data.s = data.seconds;
+  data.s = String(data.seconds);
 
   data.mss = fixTo(data.milliSeconds, 3);
-  data.ms = data.milliSeconds;
+  data.ms = String(data.milliSeconds);
 
-  output = substitute(conf.template, data);
+  output = substitute(conf.template, data as PlainObject);
   return output;
 }

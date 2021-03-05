@@ -1,8 +1,18 @@
-import { Context } from "../types.d.ts";
 import { curl as $curl } from "../service/curl.ts";
+import {
+  Context,
+  NextFn,
+  ICurlOptions,
+  PlainObject
+} from "../types.ts";
 
-export async function curl(ctx: Context, next: Function) {
-  ctx.curl = (options: any) => $curl(ctx, options);
+export async function curl(ctx: Context, next: NextFn) {
+  ctx.curl = (
+    options: ICurlOptions
+  ):Promise<PlainObject | null> => $curl(
+    ctx,
+    options
+  );
   await next();
   ctx.curl = undefined;
 }

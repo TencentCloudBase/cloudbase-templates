@@ -8,7 +8,9 @@
       "deno": {
         "use": "@cloudbase/framework-plugin-deno",
         "inputs": {
-          "dockerImage": "debian:latest"
+          "dockerImage": "debian:latest",
+          "runtime": "v1.7.5",
+          "denonVersion": "@2.4.7"
         }
       }
     }

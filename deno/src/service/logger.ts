@@ -9,7 +9,7 @@ export class Logger {
     this.ctx = ctx;
   }
 
-  _output(level: string, args: Array<any>) {
+  _output(level: string, args: unknown[]) {
     const { ctx } = this;
     const ts = new Date();
     const strTs = formatTime(ts, {
@@ -33,7 +33,7 @@ export class Logger {
         tagLevel = Colors.magenta("[#]");
         break;
       case "warn":
-        args = args.map((item: any) => {
+        args = args.map((item: unknown) => {
           if (typeof item === "string") {
             return Colors.yellow(item);
           }
@@ -42,7 +42,7 @@ export class Logger {
         tagLevel = Colors.yellow("[!]");
         break;
       case "error":
-        args = args.map((item: any) => {
+        args = args.map((item: unknown) => {
           if (typeof item === "string") {
             return Colors.red(item);
           }
@@ -65,8 +65,8 @@ export class Logger {
     console.log(...args);
   }
 
-  _color(type: string, args: Array<any>) {
-    let colorFn: any = null;
+  _color(type: string, args: unknown[]) {
+    let colorFn: unknown = null;
     switch (type) {
       case "success":
         colorFn = Colors.green;
@@ -81,7 +81,7 @@ export class Logger {
         colorFn = Colors.magenta;
         break;
     }
-    args = args.map((item: any) => {
+    args = args.map((item: unknown) => {
       if (typeof item === "string" && typeof colorFn === "function") {
         return colorFn(item);
       }
@@ -90,39 +90,39 @@ export class Logger {
     this._output("info", args);
   }
 
-  debug(...args: any) {
+  debug(...args: unknown[]) {
     this._output("debug", args);
   }
 
-  log(...args: any) {
+  log(...args: unknown[]) {
     this._output("log", args);
   }
 
-  info(...args: any) {
+  info(...args: unknown[]) {
     this._output("info", args);
   }
 
-  warn(...args: any) {
+  warn(...args: unknown[]) {
     this._output("warn", args);
   }
 
-  error(...args: any) {
+  error(...args: unknown[]) {
     this._output("error", args);
   }
 
-  success(...args: any) {
+  success(...args: unknown[]) {
     this._color("success", args);
   }
 
-  fail(...args: any) {
+  fail(...args: unknown[]) {
     this._color("fail", args);
   }
 
-  tip(...args: any) {
+  tip(...args: unknown[]) {
     this._color("tip", args);
   }
 
-  stress(...args: any) {
+  stress(...args: unknown[]) {
     this._color("stress", args);
   }
 }

@@ -8,6 +8,13 @@ export const api = {
       data: "api info",
     };
   },
+  env(ctx: State) {
+    ctx.response.body = {
+      code: 0,
+      msg: "ok",
+      data: Deno.env.toObject(),
+    };
+  },
   error() {
     throw new Error("api error");
   },

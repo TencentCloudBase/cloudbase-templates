@@ -1,3 +1,5 @@
+import { PlainObject } from "../types.ts";
+
 /**
  * 简单模板函数
  * @method substitute
@@ -9,13 +11,17 @@
  * substitute('{{city}}欢迎您', {city:'北京'}); // '北京欢迎您'
  */
 
-export function substitute(str: string, obj: any, reg?: RegExp) {
-  return str.replace(reg || (/\\?\{\{([^{}]+)\}\}/g), (match, name) => {
+export function substitute(str: string, obj: PlainObject, reg?: RegExp): string {
+  reg = reg || (/\\?\{\{([^{}]+)\}\}/g);
+  return str.replace(reg, (match: string, name: string): string => {
     if (match.charAt(0) === "\\") {
       return match.slice(1);
     }
-    // 注意：obj[name] != null 等同于 obj[name] !== null && obj[name] !== undefined
-    return (obj[name] != null) ? obj[name] : "";
+    let rs = "";
+    if (obj[name] !== null && obj[name] !== undefined) {
+      rs = String(obj[name]);
+    }
+    return rs;
   });
 }
 
@@ -28,7 +34,7 @@ export function substitute(str: string, obj: any, reg?: RegExp) {
  * getRnd36(0.5810766832590446); // 'kx2pozz9rgf'
  */
 
-export function getRnd36(rnd?: number) {
+export function getRnd36(rnd?: number): string {
   rnd = rnd || Math.random();
   return rnd.toString(36).replace(/^0./, "");
 }
@@ -42,7 +48,7 @@ export function getRnd36(rnd?: number) {
  * getTime36('2020'); // 'k4ujaio0'
  */
 
-export function getTime36(date?: number | Date) {
+export function getTime36(date?: number | Date): string {
   date = date ? new Date(date) : new Date();
   return date.getTime().toString(36);
 }

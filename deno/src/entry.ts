@@ -1,12 +1,11 @@
 import { Application } from "./deps.ts";
-import { setRoutes } from "./route/mod.ts";
+import { router } from "./route/mod.ts";
 import {
-  logger as midLogger,
   curl,
-  timing,
-  empty,
   error,
+  logger as midLogger,
   statics,
+  timing,
 } from "./middleware/mod.ts";
 import { logger } from "./service/logger.ts";
 
@@ -16,8 +15,8 @@ app.use(error);
 app.use(midLogger);
 app.use(curl);
 app.use(timing);
-app.use(empty);
-setRoutes(app);
+app.use(router.routes());
+app.use(router.allowedMethods());
 app.use(statics);
 
 const port: number = Number(Deno.env.get("PORT")) || 80;

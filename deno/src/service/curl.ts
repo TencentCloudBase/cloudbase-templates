@@ -1,12 +1,12 @@
-import { Context } from "../types.d.ts";
-import {
-  getTime36,
-  getRnd36,
-} from "../util/str.ts";
+import { Context, PlainObject, ICurlOptions } from "../types.ts";
+import { getRnd36, getTime36 } from "../util/str.ts";
 
 const fname = "[curl]";
 
-export async function curl(ctx: Context, options: any) {
+export async function curl(
+  ctx: Context,
+  options: ICurlOptions,
+): Promise<PlainObject | null> {
   const extra = {
     url: "",
     dataType: "json",
@@ -20,8 +20,8 @@ export async function curl(ctx: Context, options: any) {
   const reqId = `req_${getTime36()}_${getRnd36()}`;
   const startTime = Date.now();
 
-  const fetchOptions = { ...conf };
-  Object.keys(extra).forEach((key) => {
+  const fetchOptions: ICurlOptions = { ...conf };
+  Object.keys(extra).forEach((key: string) => {
     delete fetchOptions[key];
   });
 
@@ -37,7 +37,8 @@ export async function curl(ctx: Context, options: any) {
   let rs = null;
   let data = null;
   try {
-    rs = await fetch(conf.url, fetchOptions);
+    const opts = fetchOptions as RequestInit;
+    rs = await fetch(conf.url, opts);
     if (conf.dataType === "json") {
       data = await rs.json() || null;
     } else {
