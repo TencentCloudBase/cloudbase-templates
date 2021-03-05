@@ -1,8 +1,13 @@
 import { Context as OakContext } from "./deps.ts";
 import { Logger } from "./service/logger.ts";
 
+export interface ICurlOptions {
+  url?: string;
+  dataType?: string;
+  [key: string]: unknown;
+}
 export interface Context extends OakContext {
-  curl?: Function;
+  curl?: (options: ICurlOptions) => Promise<PlainObject | null>;
   logger?: Logger;
 }
 
