@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "cross-env CI=false react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "deploy": "cloudbase framework deploy"
@@ -31,6 +31,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "@types/jest": "^25.2.2",
     "@types/node": "^14.0.1",
     "@types/react": "^16.9.35",
