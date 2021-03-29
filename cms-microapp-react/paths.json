@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "."
+  }
+}
