@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
   height: 50vh;
 }
 
