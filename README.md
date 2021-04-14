@@ -14,7 +14,12 @@ Github 开源地址：[https://github.com/TencentCloudBase/cloudbase-framework](
 
 ## <a name="templates"></a>应用模板示例
 
-欢迎大家贡献应用模板：[https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md](https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md)
+欢迎大家贡献应用模板：
+
+https://docs.cloudbase.net/framework/guide/app.html
+
+https://docs.cloudbase.net/framework/guide/container-app.html
+
 
 Tip：你可以通过 `-e` 参数直接指定应用所使用的环境 Id，如 `cloudbase new vue-app vue -e testEnvId`。
 
