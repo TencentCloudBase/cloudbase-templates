@@ -55,7 +55,7 @@ Tip：你可以通过 `-e` 参数直接指定应用所使用的环境 Id，如 `
 您可以选择如下的贡献方式：
 
 - 贡献技术文章：[https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts](https://github.com/TencentCloudBase/cloudbase-framework/tree/master/community/posts)
-- 贡献应用模板：[https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md](https://github.com/TencentCloudBase/cloudbase-framework/blob/master/doc/app.md)
+- 贡献应用模板：https://docs.cloudbase.net/framework/guide/app.html 以及 https://docs.cloudbase.net/framework/guide/container-app.html
 - 贡献代码，提交 Pull Request
 - 反馈 bug，提交 Issue
 - 在技术会议上发表技术演讲
