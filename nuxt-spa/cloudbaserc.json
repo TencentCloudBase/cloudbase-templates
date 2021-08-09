@@ -24,7 +24,7 @@
               "timeout": 5,
               "envVariables": {},
               "runtime": "Nodejs10.15",
-              "memorySize": 128,
+              "memorySize": 1024,
               "aclRule": { "invoke": true }
             }
           ]
