@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "envId": "{{envId}}",
+  "envId": "",
   "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "framework": {
     "name": "nuxt-ssr",
@@ -18,8 +18,8 @@
               "name": "nuxt-ssr-echo",
               "timeout": 5,
               "envVariables": {},
-              "runtime": "Nodejs10.15",
-              "memory": 1024,
+              "runtime": "Nodejs12.16",
+              "memory": 256,
               "aclRule": {
                 "invoke": true
               }
