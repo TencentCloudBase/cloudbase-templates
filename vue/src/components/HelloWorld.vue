@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>
-      通过
+      通过hhhhhhhhh这是我的啦！
       <a href="https://cloud.tencent.com/document/product/876/46177" target="_blank">未登录 + 安全规则</a>
       的方式调用云开发
     </h2>
