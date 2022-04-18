@@ -11,8 +11,8 @@
                 "use": "@cloudbase/framework-plugin-node",
                 "inputs": {
                     "entry": "app.js",
-                    "path": "/nestjs-app",
-                    "name": "nestjs-app",
+                    "path": "/node-app",
+                    "name": "node-app",
                     "buildCommand": "npm install --prefer-offline --no-audit --progress=false && npm run build",
                     "functionOptions": {
                         "runtime": "Nodejs12.16",
